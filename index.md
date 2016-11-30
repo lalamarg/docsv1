@@ -3,7 +3,7 @@ layout: base
 title:  'Universal Dependencies'
 ---
 
-# Universal Dependencies VER1
+# Universal Dependencies v1
 
 [Introduction to Universal Dependencies](introduction.html)
 
@@ -24,8 +24,7 @@ title:  'Universal Dependencies'
 
 <small>
 This is the online documentation for Universal Dependencies, version 1 (2014-10-01).
-**IMPORTANT**: The documentation for version 1 is now **frozen** and should not be edited anymore.
-It will be replaced by version 2 on December 1, 2016.  
+Version 1 was replaced by version 2 on December 1, 2016.  
 </small>
 
 
