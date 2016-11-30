@@ -1,0 +1,495 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-GB" xml:lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>PRON</title>
+    <link rel="root" href=""/> <!-- for JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/jquery-ui-redmond.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
+    <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+<!--     <link rel="shortcut icon" href="favicon.ico"/> -->
+
+
+  </head>
+  <body>
+    <div id="main" class="center">
+
+      <div id="hp-header">
+	
+          <span class="header-text"><a href="http://universaldependencies.org/#language-sl">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/sl/pos">sl/pos</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_sl-pos/PRON.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+      </div>
+
+      <hr/>
+
+      <div id="content">
+	<noscript>
+	  <div id="noscript">
+	    It appears that you have Javascript disabled.
+	    Please consider enabling Javascript for this page to see the visualizations.
+	  </div>
+	</noscript>
+
+          <h2><code>PRON</code>: pronoun</h2>
+
+<h3 id="definition">Definition</h3>
+
+<p>Within the universal scheme, pronouns are words that substitute for <a href="NOUN">nouns</a> or noun phrases and whose meaning is recoverable from the linguistic or extralinguistic context. Pronouns under this definition function like nouns, which means that the term cannot be extended to words that substitute for adjectives or other POS categories, as is usually the case in Slovenian grammar. Instead, attributive pronouns are tagged as <a href="DET">determiners</a>.</p>
+
+<p>For instance, <em><b>to</b></em> “this” is traditionally called pronoun in Slovenian grammar, regardless of its syntactic context. To make the annotation parallel across languages, it is now tagged <code>PRON</code> in <em><b>To</b> sem že slišal.</em> “I have heard this before.” and as <code>DET</code> in <em><b>To</b> besedilo je nerazumljivo.</em> “This text is incomprehensible.”</p>
+
+<h3 id="examples">Examples</h3>
+
+<ul>
+  <li><em>jaz</em> “me”, <em>ti</em> “you”, <em>on</em> “he”</li>
+  <li><em>oba</em> “both”, <em>ves</em> “all”, <em>vsak</em> “anyone”, <em>vsakdo</em> “anyone”</li>
+  <li><em>ta</em> “this one”, <em>tale</em> “this one”, <em>tisti</em> “that one”</li>
+  <li><em>nič</em> “nothing”, <em>nihče</em> “nobody”, <em>nobeden</em> “noone”</li>
+  <li><em>kar</em> “which”, <em>karkoli</em> “anything”, <em>kdor</em> “who”</li>
+  <li><em>se</em> “oneself”</li>
+  <li><em>moj</em> “mine”, <em>tvoj</em> “yours”, <em>njihov</em> “theirs”</li>
+  <li><em>kaj</em> “what”, <em>kdo</em> “who”</li>
+  <li><em>nekaj</em> “something”, <em>nekdo</em> “somebody”, <em>malokdo</em> “not a lot of people”</li>
+</ul>
+
+<h4 id="conversion-from-jos">Conversion from JOS</h4>
+
+<p>All pronouns are converted to <code>PRON</code>, except for pronouns that function as attributes to nouns (through Attr dependency relation), which are converted to <code>DET</code>.</p>
+
+
+<!-- "automatic stats" -->
+
+
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udslovenian">Treebank Statistics (UD_Slovenian)</h2>
+
+<p>There are 63 <code>PRON</code> lemmas (0%), 251 <code>PRON</code> types (1%) and 6951 <code>PRON</code> tokens (5%).
+Out of 16 observed tags, the rank of <code>PRON</code> is: 9 in number of lemmas, 8 in number of types and 7 in number of tokens.</p>
+
+<p>The 10 most frequent <code>PRON</code> lemmas: <em>se, on, ta, jaz, kateri, ves, ti, kar, kaj, tisti</em></p>
+
+<p>The 10 most frequent <code>PRON</code> types:  <em>se, to, ga, jih, si, jo, tem, mu, kaj, mi</em></p>
+
+<p>The 10 most frequent ambiguous lemmas: <em>on</em> (<a href="">PRON</a> 1561, <a href="">X</a> 1), <em>ta</em> (<a href="">PRON</a> 807, <a href="">DET</a> 552), <em>jaz</em> (<a href="">PRON</a> 483, <a href="">NOUN</a> 2), <em>kateri</em> (<a href="">PRON</a> 287, <a href="">DET</a> 20), <em>ves</em> (<a href="">DET</a> 289, <a href="">PRON</a> 198, <a href="">ADV</a> 1), <em>kar</em> (<a href="">PRON</a> 153, <a href="">ADV</a> 106), <em>kaj</em> (<a href="">PRON</a> 152, <a href="">ADV</a> 21), <em>tisti</em> (<a href="">PRON</a> 79, <a href="">DET</a> 57), <em>nekaj</em> (<a href="">DET</a> 166, <a href="">PRON</a> 65, <a href="">ADV</a> 19), <em>nič</em> (<a href="">PRON</a> 63, <a href="">ADV</a> 19)</p>
+
+<p>The 10 most frequent ambiguous types:  <em>to</em> (<a href="">PRON</a> 273, <a href="">DET</a> 63), <em>si</em> (<a href="">PRON</a> 245, <a href="">AUX</a> 14, <a href="">VERB</a> 12), <em>jo</em> (<a href="">PRON</a> 224, <a href="">X</a> 1), <em>tem</em> (<a href="">PRON</a> 177, <a href="">DET</a> 96, <a href="">NOUN</a> 1, <a href="">ADV</a> 1), <em>mu</em> (<a href="">PRON</a> 158, <a href="">X</a> 2), <em>kaj</em> (<a href="">PRON</a> 110, <a href="">ADV</a> 20), <em>kar</em> (<a href="">PRON</a> 113, <a href="">ADV</a> 97), <em>vse</em> (<a href="">PRON</a> 88, <a href="">DET</a> 74, <a href="">ADV</a> 38), <em>tega</em> (<a href="">PRON</a> 99, <a href="">DET</a> 47), <em>katerem</em> (<a href="">PRON</a> 64, <a href="">DET</a> 2)</p>
+
+<ul>
+  <li><em>to</em>
+    <ul>
+      <li><a href="">PRON</a> 273: <em>Vsaj <b>to</b> v ničemer ne more biti sporno .</em></li>
+      <li><a href="">DET</a> 63: <em>Za <b>to</b> pomoč smo jim seveda tudi plačali .</em></li>
+    </ul>
+  </li>
+  <li><em>si</em>
+    <ul>
+      <li><a href="">PRON</a> 245: <em>Prvo pravilo : Za nakup <b>si</b> je treba vzeti čas .</em></li>
+      <li><a href="">AUX</a> 14: <em>Kaj si <b>si</b> pri tem sploh mislil ?</em></li>
+      <li><a href="">VERB</a> 12: <em>Ko <b>si</b> enkrat na vrhu in se poškoduješ , se je težko vrniti .</em></li>
+    </ul>
+  </li>
+  <li><em>jo</em>
+    <ul>
+      <li><a href="">PRON</a> 224: <em>Zdaj sem se spomnil , kam sem <b>jo</b> vtaknil !</em></li>
+      <li><a href="">X</a> 1: <em>( <b>jo</b> )</em></li>
+    </ul>
+  </li>
+  <li><em>tem</em>
+    <ul>
+      <li><a href="">PRON</a> 177: <em>S <b>tem</b> nikakor ni zmanjšan pomen enotne volje državljanov Slovenije .</em></li>
+      <li><a href="">DET</a> 96: <em>V <b>tem</b> trenutku je smiselno govoriti o prisilni poravnavi .</em></li>
+      <li><a href="">NOUN</a> 1: <em>Dijaki v njem prikažejo svoje poznavanje obravnavanih <b>tem</b> iz književnosti .</em></li>
+      <li><a href="">ADV</a> 1: <em>Čim boljše bo v Sloveniji znanje tujih jezikov , <b>tem</b> bolje se bo Slovenija sporazumevala s svetom .</em></li>
+    </ul>
+  </li>
+  <li><em>mu</em>
+    <ul>
+      <li><a href="">PRON</a> 158: <em>» Potem pa le pazi name , « se <b>mu</b> je v odgovor nasmehnila Regina .</em></li>
+      <li><a href="">X</a> 2: <em>( <b>mu</b> )</em></li>
+    </ul>
+  </li>
+  <li><em>kaj</em>
+    <ul>
+      <li><a href="">PRON</a> 110: <em>Toda <b>kaj</b> je energija “ nacionalizma “ ?</em></li>
+      <li><a href="">ADV</a> 20: <em>Zavetniški objem je <b>kaj</b> hitro postal ljubezenski .</em></li>
+    </ul>
+  </li>
+  <li><em>kar</em>
+    <ul>
+      <li><a href="">PRON</a> 113: <em>Kot tak ni nekaj , <b>kar</b> se zgodi v praznem prostoru .</em></li>
+      <li><a href="">ADV</a> 97: <em>V skrajnih primerih jih pesti že <b>kar</b> kompleks superiornosti .</em></li>
+    </ul>
+  </li>
+  <li><em>vse</em>
+    <ul>
+      <li><a href="">PRON</a> 88: <em>Ko <b>vse</b> skupaj zavre , vložimo fileje in jih dušimo dobrih 10 minut .</em></li>
+      <li><a href="">DET</a> 74: <em>Na <b>vse</b> prireditve je vstop prost .</em></li>
+      <li><a href="">ADV</a> 38: <em>Slišim namreč <b>vse</b> več glasov o nepravilnostih .</em></li>
+    </ul>
+  </li>
+  <li><em>tega</em>
+    <ul>
+      <li><a href="">PRON</a> 99: <em>Toda bil sem suh , poleg <b>tega</b> pa se je poročila sestrična .</em></li>
+      <li><a href="">DET</a> 47: <em>Napetost <b>tega</b> člena je 3,20 V .</em></li>
+    </ul>
+  </li>
+  <li><em>katerem</em>
+    <ul>
+      <li><a href="">PRON</a> 64: <em>- Zamislite si položaj , v <b>katerem</b> si želite nastopiti mirno in sproščeno .</em></li>
+      <li><a href="">DET</a> 2: <em>Na <b>katerem</b> trgu srečuješ popolno oziroma svobodno konkurenco ?</em></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="morphology">Morphology</h2>
+
+<p>The form / lemma ratio of <code>PRON</code> is 3.984127 (the average of all parts of speech is 1.894262).</p>
+
+<p>The 1st highest number of forms (24) was observed with the lemma “on”: <em>ga, je, ji, jih, jim, jima, jo, ju, mu, nje, njega, njej, njem, njemu, njih, njiju, njim, njima, njimi, njo, on, ona, onadva, oni</em>.</p>
+
+<p>The 2nd highest number of forms (13) was observed with the lemma “jaz”: <em>jaz, mano, me, mene, meni, menoj, mi, midva, naju, nam, nama, nami, nas</em>.</p>
+
+<p>The 3rd highest number of forms (11) was observed with the lemma “kateri”: <em>katera, katere, katerega, katerem, kateremu, kateri, katerih, katerim, katerima, katerimi, katero</em>.</p>
+
+<p><code>PRON</code> occurs with 10 features: <a href="">sl-feat/PronType</a> (6951; 100% instances), <a href="">sl-feat/Case</a> (4888; 70% instances), <a href="">sl-feat/Number</a> (4530; 65% instances), <a href="">sl-feat/Variant</a> (3917; 56% instances), <a href="">sl-feat/Gender</a> (3877; 56% instances), <a href="">sl-feat/Reflex</a> (2443; 35% instances), <a href="">sl-feat/Person</a> (2341; 34% instances), <a href="">sl-feat/Poss</a> (45; 1% instances), <a href="">sl-feat/Number[psor]</a> (23; 0% instances), <a href="">sl-feat/Gender[psor]</a> (11; 0% instances)</p>
+
+<p><code>PRON</code> occurs with 30 feature-value pairs: <code>Case=Acc</code>, <code>Case=Dat</code>, <code>Case=Gen</code>, <code>Case=Ins</code>, <code>Case=Loc</code>, <code>Case=Nom</code>, <code>Gender=Fem</code>, <code>Gender=Masc</code>, <code>Gender=Neut</code>, <code>Gender[psor]=Fem</code>, <code>Gender[psor]=Masc</code>, <code>Number=Dual</code>, <code>Number=Plur</code>, <code>Number=Sing</code>, <code>Number[psor]=Plur</code>, <code>Number[psor]=Sing</code>, <code>Person=1</code>, <code>Person=2</code>, <code>Person=3</code>, <code>Poss=Yes</code>, <code>PronType=Dem</code>, <code>PronType=Ind</code>, <code>PronType=Int</code>, <code>PronType=Neg</code>, <code>PronType=Prs</code>, <code>PronType=Rel</code>, <code>PronType=Tot</code>, <code>Reflex=Yes</code>, <code>Variant=Bound</code>, <code>Variant=Short</code></p>
+
+<p><code>PRON</code> occurs with 274 feature combinations.
+The most frequent feature combination is <code>PronType=Prs|Reflex=Yes|Variant=Short</code> (2062 tokens).
+Examples: <em>se</em></p>
+
+<h2 id="relations">Relations</h2>
+
+<p><code>PRON</code> nodes are attached to their parents using 14 different relations: <a href="">sl-dep/expl</a> (2298; 33% instances), <a href="">sl-dep/dobj</a> (1889; 27% instances), <a href="">sl-dep/nmod</a> (1436; 21% instances), <a href="">sl-dep/nsubj</a> (879; 13% instances), <a href="">sl-dep/iobj</a> (318; 5% instances), <a href="">sl-dep/conj</a> (41; 1% instances), <a href="">sl-dep/root</a> (41; 1% instances), <a href="">sl-dep/ccomp</a> (11; 0% instances), <a href="">sl-dep/xcomp</a> (10; 0% instances), <a href="">sl-dep/acl</a> (9; 0% instances), <a href="">sl-dep/mwe</a> (9; 0% instances), <a href="">sl-dep/advcl</a> (6; 0% instances), <a href="">sl-dep/csubj</a> (2; 0% instances), <a href="">sl-dep/parataxis</a> (2; 0% instances)</p>
+
+<p>Parents of <code>PRON</code> nodes belong to 11 different parts of speech: <a href="">VERB</a> (6026; 87% instances), <a href="">NOUN</a> (380; 5% instances), <a href="">ADJ</a> (376; 5% instances), <a href="">PRON</a> (78; 1% instances), <a href="">ROOT</a> (41; 1% instances), <a href="">ADV</a> (15; 0% instances), <a href="">PROPN</a> (14; 0% instances), <a href="">NUM</a> (10; 0% instances), <a href="">ADP</a> (5; 0% instances), <a href="">DET</a> (5; 0% instances), <a href="">X</a> (1; 0% instances)</p>
+
+<p>5485 (79%) <code>PRON</code> nodes are leaves.</p>
+
+<p>1188 (17%) <code>PRON</code> nodes have one child.</p>
+
+<p>174 (3%) <code>PRON</code> nodes have two children.</p>
+
+<p>104 (1%) <code>PRON</code> nodes have three or more children.</p>
+
+<p>The highest child degree of a <code>PRON</code> node is 11.</p>
+
+<p>Children of <code>PRON</code> nodes are attached using 22 different relations: <a href="">sl-dep/case</a> (1143; 57% instances), <a href="">sl-dep/acl</a> (240; 12% instances), <a href="">sl-dep/nmod</a> (123; 6% instances), <a href="">sl-dep/punct</a> (84; 4% instances), <a href="">sl-dep/cop</a> (75; 4% instances), <a href="">sl-dep/advmod</a> (68; 3% instances), <a href="">sl-dep/nsubj</a> (57; 3% instances), <a href="">sl-dep/amod</a> (55; 3% instances), <a href="">sl-dep/cc</a> (43; 2% instances), <a href="">sl-dep/conj</a> (41; 2% instances), <a href="">sl-dep/mark</a> (15; 1% instances), <a href="">sl-dep/aux</a> (13; 1% instances), <a href="">sl-dep/nummod</a> (7; 0% instances), <a href="">sl-dep/parataxis</a> (6; 0% instances), <a href="">sl-dep/csubj</a> (5; 0% instances), <a href="">sl-dep/dobj</a> (4; 0% instances), <a href="">sl-dep/mwe</a> (4; 0% instances), <a href="">sl-dep/cc:preconj</a> (3; 0% instances), <a href="">sl-dep/advcl</a> (2; 0% instances), <a href="">sl-dep/appos</a> (1; 0% instances), <a href="">sl-dep/discourse</a> (1; 0% instances), <a href="">sl-dep/expl</a> (1; 0% instances)</p>
+
+<p>Children of <code>PRON</code> nodes belong to 14 different parts of speech: <a href="">ADP</a> (1131; 57% instances), <a href="">VERB</a> (294; 15% instances), <a href="">NOUN</a> (132; 7% instances), <a href="">ADJ</a> (94; 5% instances), <a href="">PUNCT</a> (84; 4% instances), <a href="">PRON</a> (78; 4% instances), <a href="">CONJ</a> (49; 2% instances), <a href="">ADV</a> (39; 2% instances), <a href="">PART</a> (30; 2% instances), <a href="">SCONJ</a> (30; 2% instances), <a href="">AUX</a> (13; 1% instances), <a href="">NUM</a> (8; 0% instances), <a href="">PROPN</a> (8; 0% instances), <a href="">X</a> (1; 0% instances)</p>
+
+<hr />
+
+<h2 id="treebank-statistics-udslovenian-sst">Treebank Statistics (UD_Slovenian-SST)</h2>
+
+<p>There are 46 <code>PRON</code> lemmas (1%), 165 <code>PRON</code> types (3%) and 2594 <code>PRON</code> tokens (9%).
+Out of 16 observed tags, the rank of <code>PRON</code> is: 10 in number of lemmas, 8 in number of types and 5 in number of tokens.</p>
+
+<p>The 10 most frequent <code>PRON</code> lemmas: <em>ta, se, jaz, on, kaj, ti, ves, tisti, nič, kar</em></p>
+
+<p>The 10 most frequent <code>PRON</code> types:  <em>to, se, kaj, jaz, mi, ti, ga, jih, si, nič</em></p>
+
+<p>The 10 most frequent ambiguous lemmas: <em>ta</em> (<a href="">PRON</a> 613, <a href="">DET</a> 208), <em>se</em> (<a href="">PRON</a> 460, <a href="">VERB</a> 1), <em>on</em> (<a href="">PRON</a> 309, <a href="">X</a> 2), <em>kaj</em> (<a href="">PRON</a> 196, <a href="">ADV</a> 43, <a href="">X</a> 1), <em>ti</em> (<a href="">PRON</a> 194, <a href="">X</a> 1, <a href="">INTJ</a> 1), <em>ves</em> (<a href="">PRON</a> 54, <a href="">DET</a> 42), <em>tisti</em> (<a href="">PRON</a> 53, <a href="">DET</a> 32), <em>nič</em> (<a href="">PRON</a> 42, <a href="">ADV</a> 22), <em>kar</em> (<a href="">ADV</a> 70, <a href="">PRON</a> 37), <em>nekaj</em> (<a href="">PRON</a> 29, <a href="">ADV</a> 23, <a href="">DET</a> 11)</p>
+
+<p>The 10 most frequent ambiguous types:  <em>to</em> (<a href="">PRON</a> 489, <a href="">DET</a> 26, <a href="">X</a> 1), <em>se</em> (<a href="">PRON</a> 398, <a href="">X</a> 6), <em>kaj</em> (<a href="">PRON</a> 185, <a href="">ADV</a> 43, <a href="">X</a> 1), <em>mi</em> (<a href="">PRON</a> 116, <a href="">X</a> 1), <em>ti</em> (<a href="">PRON</a> 105, <a href="">DET</a> 10, <a href="">X</a> 1, <a href="">INTJ</a> 1), <em>ga</em> (<a href="">PRON</a> 60, <a href="">X</a> 1), <em>si</em> (<a href="">PRON</a> 48, <a href="">AUX</a> 39, <a href="">VERB</a> 32, <a href="">X</a> 1), <em>nič</em> (<a href="">PRON</a> 41, <a href="">ADV</a> 22), <em>vse</em> (<a href="">PRON</a> 41, <a href="">DET</a> 17, <a href="">ADV</a> 7), <em>jo</em> (<a href="">PRON</a> 37, <a href="">INTJ</a> 1)</p>
+
+<ul>
+  <li><em>to</em>
+    <ul>
+      <li><a href="">PRON</a> 489: <em>pol pa v oklepaju piše le za ta to pa <b>to</b> vizo lahko trideset dni ostaneš</em></li>
+      <li><a href="">DET</a> 26: <em>pol pa v oklepaju piše le za ta <b>to</b> pa to vizo lahko trideset dni ostaneš</em></li>
+      <li><a href="">X</a> 1: <em>mi smo kar eee kolega ni povedal v letošnjem letu intenzivirali obnavljanje in eee eee gradnjo na progi in pri tem opravili s [gap] <b>to</b> [gap] opisano povečanje tovornega prometa navkljub</em></li>
+    </ul>
+  </li>
+  <li><em>se</em>
+    <ul>
+      <li><a href="">PRON</a> 398: <em>če če ne boste mogli na havaje priti ne <b>se</b> sekirat</em></li>
+      <li><a href="">X</a> 6: <em>eee zraven so [gap] <b>se</b> večje trgovine pa eee lpp prevoz je</em></li>
+    </ul>
+  </li>
+  <li><em>kaj</em>
+    <ul>
+      <li><a href="">PRON</a> 185: <em>[gap] <b>kaj</b> a tule boš diplomirala pol boš šla pa ven magisterij delat ?</em></li>
+      <li><a href="">ADV</a> 43: <em>pa si bil že <b>kaj</b> doma nisi bil še nič tako</em></li>
+      <li><a href="">X</a> 1: <em><b>kaj</b> zar [gap] in to niso tiste ki kažejo tudi razpoloženje ne</em></li>
+    </ul>
+  </li>
+  <li><em>mi</em>
+    <ul>
+      <li><a href="">PRON</a> 116: <em>[gap] na morju <b>mi</b> je frizuro zrihtal</em></li>
+      <li><a href="">X</a> 1: <em>ampak nisem s [gap] pa še zmeraj jaz nekaj za jezike bil spe [gap] spet eee sem jaz cvek pisal če sem če smo eee dela [gap] delal sem pol mat [gap] <b>mi</b> [gap] takrat je bila eee matura ne diploma na poklicni šoli ker sem jaz prvo končal</em></li>
+    </ul>
+  </li>
+  <li><em>ti</em>
+    <ul>
+      <li><a href="">PRON</a> 105: <em>km [gap] ker <b>ti</b> na vizi piše od kdaj do kdaj <b>ti</b> velja</em></li>
+      <li><a href="">DET</a> 10: <em>to je igra ki jo igrajo eee <b>ti</b> eee člani družine</em></li>
+      <li><a href="">X</a> 1: <em>in se smejem kot matasta tipo ki že costi <b>ti</b> ga bi bujeri ser [all:laughter]</em></li>
+      <li><a href="">INTJ</a> 1: <em>pa če noče zaspati ko je še mala pa ji špilaš pred posteljico veš [audience:laughter] tako delaš <b>ti</b> di di pa še igraš</em></li>
+    </ul>
+  </li>
+  <li><em>ga</em>
+    <ul>
+      <li><a href="">PRON</a> 60: <em>samo jebi <b>ga</b> ampak sliši se pa ne a veš</em></li>
+      <li><a href="">X</a> 1: <em>in se smejem kot matasta tipo ki že costi ti <b>ga</b> bi bujeri ser [all:laughter]</em></li>
+    </ul>
+  </li>
+  <li><em>si</em>
+    <ul>
+      <li><a href="">PRON</a> 48: <em>kdaj <b>si</b> s [gap]</em></li>
+      <li><a href="">AUX</a> 39: <em>pa <b>si</b> bil že kaj doma nisi bil še nič tako</em></li>
+      <li><a href="">VERB</a> 32: <em>ako ako imaš imaš ako nimaš pa <b>si</b> revež</em></li>
+      <li><a href="">X</a> 1: <em>najmanj kar bi <b>si</b> [gap] glejte najmanj kar bi se … poglejte dovoli [gap] … ja</em></li>
+    </ul>
+  </li>
+  <li><em>nič</em>
+    <ul>
+      <li><a href="">PRON</a> 41: <em><b>nič</b> posebnega</em></li>
+      <li><a href="">ADV</a> 22: <em>pa si bil že kaj doma nisi bil še <b>nič</b> tako</em></li>
+    </ul>
+  </li>
+  <li><em>vse</em>
+    <ul>
+      <li><a href="">PRON</a> 41: <em>res no <b>vse</b> <b>vse</b> jaz ne vem česa <b>vse</b> ni imel … ja ja ja</em></li>
+      <li><a href="">DET</a> 17: <em>ne ja kaj pa je te ja kaj pa more more saj to eee <b>vse</b> hudo mine ne eee ja</em></li>
+      <li><a href="">ADV</a> 7: <em>[gap] tole so <b>vse</b> karavanke in tukaj je en sicer ne to je že pohorje zdaj pa [gap]</em></li>
+    </ul>
+  </li>
+  <li><em>jo</em>
+    <ul>
+      <li><a href="">PRON</a> 37: <em>[speaker:laughter] še kar stoka glej <b>jo</b></em></li>
+      <li><a href="">INTJ</a> 1: <em><b>jo</b> pa ej sploh ne vem a so se pogledal oni mislim na teh slikah k</em></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="morphology-1">Morphology</h2>
+
+<p>The form / lemma ratio of <code>PRON</code> is 3.586957 (the average of all parts of speech is 1.575031).</p>
+
+<p>The 1st highest number of forms (22) was observed with the lemma “on”: <em>ga, je, ji, jih, jim, jo, mu, nje, njega, njej, njem, njemu, njih, njim, njima, njimi, njo, on, ona, onadva, one, oni</em>.</p>
+
+<p>The 2nd highest number of forms (12) was observed with the lemma “jaz”: <em>jaz, mano, me, mene, meni, mi, midva, midve, nam, nama, nami, nas</em>.</p>
+
+<p>The 3rd highest number of forms (12) was observed with the lemma “ti”: <em>tabo, te, tebe, tebi, ti, vaju, vam, vami, vas, vi, vidva, vidve</em>.</p>
+
+<p><code>PRON</code> occurs with 8 features: <a href="">sl-feat/PronType</a> (2594; 100% instances), <a href="">sl-feat/Case</a> (2196; 85% instances), <a href="">sl-feat/Number</a> (2133; 82% instances), <a href="">sl-feat/Gender</a> (1635; 63% instances), <a href="">sl-feat/Person</a> (915; 35% instances), <a href="">sl-feat/Variant</a> (806; 31% instances), <a href="">sl-feat/Number[psor]</a> (20; 1% instances), <a href="">sl-feat/Poss</a> (20; 1% instances)</p>
+
+<p><code>PRON</code> occurs with 28 feature-value pairs: <code>Case=Acc</code>, <code>Case=Dat</code>, <code>Case=Gen</code>, <code>Case=Ins</code>, <code>Case=Loc</code>, <code>Case=Nom</code>, <code>Gender=Fem</code>, <code>Gender=Masc</code>, <code>Gender=Neut</code>, <code>Number=Dual</code>, <code>Number=Plur</code>, <code>Number=Sing</code>, <code>Number[psor]=Dual</code>, <code>Number[psor]=Plur</code>, <code>Number[psor]=Sing</code>, <code>Person=1</code>, <code>Person=2</code>, <code>Person=3</code>, <code>Poss=Yes</code>, <code>PronType=Dem</code>, <code>PronType=Ind</code>, <code>PronType=Int</code>, <code>PronType=Neg</code>, <code>PronType=Prs</code>, <code>PronType=Rel</code>, <code>PronType=Tot</code>, <code>Variant=Bound</code>, <code>Variant=Short</code></p>
+
+<p><code>PRON</code> occurs with 178 feature combinations.
+The most frequent feature combination is <code>PronType=Prs|Variant=Short</code> (398 tokens).
+Examples: <em>se</em></p>
+
+<h2 id="relations-1">Relations</h2>
+
+<p><code>PRON</code> nodes are attached to their parents using 23 different relations: <a href="">sl-dep/nsubj</a> (779; 30% instances), <a href="">sl-dep/dobj</a> (649; 25% instances), <a href="">sl-dep/expl</a> (463; 18% instances), <a href="">sl-dep/nmod</a> (231; 9% instances), <a href="">sl-dep/root</a> (134; 5% instances), <a href="">sl-dep/iobj</a> (82; 3% instances), <a href="">sl-dep/reparandum</a> (62; 2% instances), <a href="">sl-dep/parataxis</a> (35; 1% instances), <a href="">sl-dep/conj:extend</a> (32; 1% instances), <a href="">sl-dep/conj</a> (29; 1% instances), <a href="">sl-dep/cc</a> (16; 1% instances), <a href="">sl-dep/ccomp</a> (13; 1% instances), <a href="">sl-dep/discourse</a> (13; 1% instances), <a href="">sl-dep/dislocated</a> (12; 0% instances), <a href="">sl-dep/acl</a> (9; 0% instances), <a href="">sl-dep/compound</a> (8; 0% instances), <a href="">sl-dep/mwe</a> (8; 0% instances), <a href="">sl-dep/advmod</a> (5; 0% instances), <a href="">sl-dep/advcl</a> (4; 0% instances), <a href="">sl-dep/appos</a> (4; 0% instances), <a href="">sl-dep/vocative</a> (3; 0% instances), <a href="">sl-dep/parataxis:restart</a> (2; 0% instances), <a href="">sl-dep/amod</a> (1; 0% instances)</p>
+
+<p>Parents of <code>PRON</code> nodes belong to 14 different parts of speech: <a href="">VERB</a> (1924; 74% instances), <a href="">NOUN</a> (186; 7% instances), <a href="">ROOT</a> (134; 5% instances), <a href="">ADJ</a> (124; 5% instances), <a href="">PRON</a> (113; 4% instances), <a href="">PROPN</a> (23; 1% instances), <a href="">X</a> (23; 1% instances), <a href="">AUX</a> (15; 1% instances), <a href="">NUM</a> (15; 1% instances), <a href="">ADV</a> (14; 1% instances), <a href="">PART</a> (13; 1% instances), <a href="">DET</a> (5; 0% instances), <a href="">ADP</a> (4; 0% instances), <a href="">CONJ</a> (1; 0% instances)</p>
+
+<p>2018 (78%) <code>PRON</code> nodes are leaves.</p>
+
+<p>320 (12%) <code>PRON</code> nodes have one child.</p>
+
+<p>116 (4%) <code>PRON</code> nodes have two children.</p>
+
+<p>140 (5%) <code>PRON</code> nodes have three or more children.</p>
+
+<p>The highest child degree of a <code>PRON</code> node is 9.</p>
+
+<p>Children of <code>PRON</code> nodes are attached using 32 different relations: <a href="">sl-dep/case</a> (229; 20% instances), <a href="">sl-dep/advmod</a> (153; 13% instances), <a href="">sl-dep/acl</a> (92; 8% instances), <a href="">sl-dep/cop</a> (80; 7% instances), <a href="">sl-dep/punct</a> (76; 6% instances), <a href="">sl-dep/nsubj</a> (72; 6% instances), <a href="">sl-dep/discourse</a> (70; 6% instances), <a href="">sl-dep/reparandum</a> (64; 5% instances), <a href="">sl-dep/nmod</a> (56; 5% instances), <a href="">sl-dep/parataxis</a> (40; 3% instances), <a href="">sl-dep/cc</a> (37; 3% instances), <a href="">sl-dep/discourse:filler</a> (34; 3% instances), <a href="">sl-dep/mwe</a> (22; 2% instances), <a href="">sl-dep/conj</a> (19; 2% instances), <a href="">sl-dep/advcl</a> (15; 1% instances), <a href="">sl-dep/mark</a> (15; 1% instances), <a href="">sl-dep/amod</a> (14; 1% instances), <a href="">sl-dep/parataxis:discourse</a> (12; 1% instances), <a href="">sl-dep/appos</a> (10; 1% instances), <a href="">sl-dep/det</a> (10; 1% instances), <a href="">sl-dep/dobj</a> (10; 1% instances), <a href="">sl-dep/vocative</a> (9; 1% instances), <a href="">sl-dep/dislocated</a> (8; 1% instances), <a href="">sl-dep/compound</a> (5; 0% instances), <a href="">sl-dep/parataxis:restart</a> (5; 0% instances), <a href="">sl-dep/expl</a> (4; 0% instances), <a href="">sl-dep/nummod</a> (4; 0% instances), <a href="">sl-dep/aux</a> (3; 0% instances), <a href="">sl-dep/conj:extend</a> (2; 0% instances), <a href="">sl-dep/cc:preconj</a> (1; 0% instances), <a href="">sl-dep/ccomp</a> (1; 0% instances), <a href="">sl-dep/csubj</a> (1; 0% instances)</p>
+
+<p>Children of <code>PRON</code> nodes belong to 16 different parts of speech: <a href="">VERB</a> (228; 19% instances), <a href="">ADP</a> (214; 18% instances), <a href="">PRON</a> (113; 10% instances), <a href="">ADV</a> (112; 10% instances), <a href="">PART</a> (91; 8% instances), <a href="">NOUN</a> (85; 7% instances), <a href="">CONJ</a> (68; 6% instances), <a href="">X</a> (61; 5% instances), <a href="">PUNCT</a> (45; 4% instances), <a href="">ADJ</a> (43; 4% instances), <a href="">INTJ</a> (41; 3% instances), <a href="">SCONJ</a> (27; 2% instances), <a href="">PROPN</a> (20; 2% instances), <a href="">NUM</a> (12; 1% instances), <a href="">DET</a> (10; 1% instances), <a href="">AUX</a> (3; 0% instances)</p>
+
+
+
+
+<!-- "in other languages" links -->
+<hr/>
+
+PRON in other languages:
+
+[<a href="../../bg/pos/PRON.html">bg</a>]
+
+[<a href="../../cs/pos/PRON.html">cs</a>]
+
+[<a href="../../de/pos/PRON.html">de</a>]
+
+[<a href="../../el/pos/PRON.html">el</a>]
+
+[<a href="../../en/pos/PRON.html">en</a>]
+
+[<a href="../../es/pos/PRON.html">es</a>]
+
+[<a href="../../eu/pos/PRON.html">eu</a>]
+
+[<a href="../../fa/pos/PRON.html">fa</a>]
+
+[<a href="../../fi/pos/PRON.html">fi</a>]
+
+[<a href="../../fr/pos/PRON.html">fr</a>]
+
+[<a href="../../ga/pos/PRON.html">ga</a>]
+
+[<a href="../../he/pos/PRON.html">he</a>]
+
+[<a href="../../hu/pos/PRON.html">hu</a>]
+
+[<a href="../../it/pos/PRON.html">it</a>]
+
+[<a href="../../ja/pos/PRON.html">ja</a>]
+
+[<a href="../../ko/pos/PRON.html">ko</a>]
+
+[<a href="../../sv/pos/PRON.html">sv</a>]
+
+[<a href="../../u/pos/PRON.html">u</a>]
+
+
+
+
+      </div>
+
+<!-- support for embedded visualizations -->
+<script type="text/javascript">
+    var root = '../../'; // filled in by jekyll
+    head.js(
+        // External libraries
+        root + 'lib/ext/jquery.min.js',
+        root + 'lib/ext/jquery.svg.min.js',
+        root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
+        root + 'lib/ext/jquery-ui.min.js',
+        root + 'lib/ext/waypoints.min.js',
+        root + 'lib/ext/jquery.address.min.js',
+
+        // brat helper modules
+        root + 'lib/brat/configuration.js',
+        root + 'lib/brat/util.js',
+        root + 'lib/brat/annotation_log.js',
+        root + 'lib/ext/webfont.js',
+        // brat modules
+        root + 'lib/brat/dispatcher.js',
+        root + 'lib/brat/url_monitor.js',
+        root + 'lib/brat/visualizer.js',
+
+        // embedding configuration
+        root + 'lib/local/config.js',
+        // project-specific collection data
+        root + 'lib/local/collections.js',
+
+        // NOTE: non-local libraries
+        'https://spyysalo.github.io/annodoc/lib/local/annodoc.js',
+        'https://spyysalo.github.io/conllu.js/conllu.js'
+    );
+
+    var webFontURLs = [
+//        root + 'static/fonts/Astloch-Bold.ttf',
+        root + 'static/fonts/PT_Sans-Caption-Web-Regular.ttf',
+        root + 'static/fonts/Liberation_Sans-Regular.ttf'
+    ];
+
+    var setupAccordions = function() {
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
+	$(".jquery-ui-accordion").accordion({
+	    collapsible: true,
+	    active: false,
+	    change: accordionChange
+	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
+    };
+
+    var setupTabs = function() {
+        // standard jQuery UI "tabs" element initialization
+        $(".jquery-ui-tabs").tabs({ heightStyle: "auto" });
+
+        // use jQuery address to preserve tab state
+        // (see https://github.com/UniversalDependencies/docs/issues/65,
+        // http://stackoverflow.com/a/3330919)
+        if ($(".jquery-ui-tabs").length > 0) {
+            $.address.change(function(event){
+	        $(".jquery-ui-tabs").tabs("select", window.location.hash)
+	    });
+	    $(".jquery-ui-tabs").bind("tabsselect", function(event, ui) { 
+	        window.location.hash = ui.tab.hash;
+	    });
+        }
+    };
+
+    head.ready(function() {
+        // set up UI tabs on page
+        setupTabs();
+        setupAccordions();
+        setupTimeago();
+
+        // mark current collection (filled in by Jekyll)
+        Collections.listing['_current'] = 'sl-pos';
+
+	// perform all embedding and support functions
+	Annodoc.activate(Config.bratCollData, Collections.listing);
+    });
+</script>
+
+
+<!-- google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55233688-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+      <div id="footer">
+	  <p class="footer-text">&copy; 2014 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
+      </div>
+    </div>
+  </body>
+</html>

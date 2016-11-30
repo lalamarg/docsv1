@@ -1,0 +1,488 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-GB" xml:lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>parataxis</title>
+    <link rel="root" href=""/> <!-- for JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/jquery-ui-redmond.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
+    <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+<!--     <link rel="shortcut icon" href="favicon.ico"/> -->
+
+
+  </head>
+  <body>
+    <div id="main" class="center">
+
+      <div id="hp-header">
+	
+          <span class="header-text"><a href="http://universaldependencies.org/#language-en">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/en/dep">en/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_en-dep/parataxis.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+      </div>
+
+      <hr/>
+
+      <div id="content">
+	<noscript>
+	  <div id="noscript">
+	    It appears that you have Javascript disabled.
+	    Please consider enabling Javascript for this page to see the visualizations.
+	  </div>
+	</noscript>
+
+          <h2><code>parataxis</code>: parataxis</h2>
+
+<p>The parataxis relation (from Greek for “place side by side”) is a relation between the main verb of a clause and other sentential elements, such as a sentential parenthetical, a clause after a “:” or a “;”, or two sentences placed side by side without any explicit coordination or subordination.</p>
+
+<pre><code class="language-sdparse">Let 's face it we 're annoyed
+parataxis(Let, annoyed)
+</code></pre>
+
+<p>When multiple parataxes are present in a single sentence, they get a flat structure, not a hierarchical one, even if they form a temporal sequence.</p>
+
+<pre><code class="language-sdparse">ROOT I 'm not kidding , I once lost a hamster in my house , three months later I walk down in the basement and it was as big as a rat .
+root(ROOT, kidding)
+parataxis(lost, kidding)
+parataxis(walk, kidding)
+</code></pre>
+
+<p>All else being equal, the leftmost phrase should be the head, but in rare situations the parataxis can go ``backwards’’:</p>
+
+<pre><code class="language-sdparse">The guy , John said , left early in the morning
+parataxis(left, said)
+</code></pre>
+
+<p>See also: <a href="/u/dep/parataxis.html">language-general documentation of <code>parataxis</code></a></p>
+
+
+<!-- "automatic stats" -->
+
+
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udenglish">Treebank Statistics (UD_English)</h2>
+
+<p>This relation is universal.</p>
+
+<p>1844 nodes (1%) are attached to their parents as <code>parataxis</code>.</p>
+
+<p>1769 instances of <code>parataxis</code> (96%) are left-to-right (parent precedes child).
+Average distance between parent and child is 10.8600867678959.</p>
+
+<p>The following 64 pairs of parts of speech are connected with <code>parataxis</code>: <a href="">en-pos/VERB</a>-<a href="">en-pos/VERB</a> (651; 35% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/VERB</a> (221; 12% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/VERB</a> (146; 8% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/NOUN</a> (132; 7% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/ADJ</a> (126; 7% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/NOUN</a> (108; 6% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/ADJ</a> (44; 2% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/NOUN</a> (42; 2% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/ADJ</a> (41; 2% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/NOUN</a> (40; 2% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/VERB</a> (40; 2% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/VERB</a> (29; 2% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/PROPN</a> (25; 1% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/PROPN</a> (16; 1% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/PRON</a> (14; 1% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/VERB</a> (13; 1% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/PROPN</a> (12; 1% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/ADV</a> (12; 1% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/VERB</a> (11; 1% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/NUM</a> (9; 0% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/X</a> (9; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/ADJ</a> (8; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/NOUN</a> (7; 0% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/ADV</a> (6; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/ADJ</a> (6; 0% instances), <a href="">en-pos/X</a>-<a href="">en-pos/VERB</a> (6; 0% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/PROPN</a> (5; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/NUM</a> (5; 0% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/NOUN</a> (4; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/PRON</a> (4; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/SYM</a> (4; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/ADV</a> (3; 0% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/NOUN</a> (3; 0% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/SYM</a> (3; 0% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/AUX</a> (2; 0% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/NUM</a> (2; 0% instances), <a href="">en-pos/DET</a>-<a href="">en-pos/VERB</a> (2; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/SYM</a> (2; 0% instances), <a href="">en-pos/SYM</a>-<a href="">en-pos/NOUN</a> (2; 0% instances), <a href="">en-pos/SYM</a>-<a href="">en-pos/SYM</a> (2; 0% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/AUX</a> (2; 0% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/PART</a> (2; 0% instances), <a href="">en-pos/X</a>-<a href="">en-pos/NOUN</a> (2; 0% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/SYM</a> (1; 0% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/X</a> (1; 0% instances), <a href="">en-pos/ADP</a>-<a href="">en-pos/NOUN</a> (1; 0% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/ADJ</a> (1; 0% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/ADV</a> (1; 0% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/PART</a> (1; 0% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/PRON</a> (1; 0% instances), <a href="">en-pos/AUX</a>-<a href="">en-pos/ADJ</a> (1; 0% instances), <a href="">en-pos/AUX</a>-<a href="">en-pos/VERB</a> (1; 0% instances), <a href="">en-pos/INTJ</a>-<a href="">en-pos/PROPN</a> (1; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/DET</a> (1; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/INTJ</a> (1; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/NUM</a> (1; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/X</a> (1; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/NUM</a> (1; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/PROPN</a> (1; 0% instances), <a href="">en-pos/PART</a>-<a href="">en-pos/NOUN</a> (1; 0% instances), <a href="">en-pos/PART</a>-<a href="">en-pos/VERB</a> (1; 0% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/PRON</a> (1; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/ADV</a> (1; 0% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/DET</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 1 7 parataxis	color:blue
+1	Read	read	VERB	VB	Mood=Imp|VerbForm=Fin	0	root	_	_
+2	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+3	entire	entire	ADJ	JJ	Degree=Pos	4	amod	_	_
+4	article	article	NOUN	NN	Number=Sing	1	dobj	_	SpaceAfter=No
+5	;	;	PUNCT	,	_	1	punct	_	_
+6	there	there	PRON	EX	_	7	expl	_	SpaceAfter=No
+7	's	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
+8	a	a	DET	DT	Definite=Ind|PronType=Art	9	det	_	_
+9	punchline	punchline	NOUN	NN	Number=Sing	7	nsubj	_	SpaceAfter=No
+10	,	,	PUNCT	,	_	7	punct	_	_
+11	too	too	ADV	RB	_	7	advmod	_	SpaceAfter=No
+12	.	.	PUNCT	.	_	1	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 1 8 parataxis	color:blue
+1	Moral	moral	NOUN	NN	Number=Sing	0	root	_	_
+2	of	of	ADP	IN	_	4	case	_	_
+3	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
+4	story	story	NOUN	NN	Number=Sing	1	nmod	_	SpaceAfter=No
+5	:	:	PUNCT	:	_	1	punct	_	_
+6	Do	do	AUX	VB	Mood=Imp|VerbForm=Fin	8	aux	_	SpaceAfter=No
+7	n't	not	PART	RB	_	8	neg	_	_
+8	drink	drink	VERB	VB	Mood=Imp|VerbForm=Fin	1	parataxis	_	_
+9	Coke	Coke	PROPN	NNP	Number=Sing	8	dobj	_	SpaceAfter=No
+10	..........	..........	PUNCT	,	_	8	punct	_	SpaceAfter=No
+11	drink	drink	VERB	VB	Mood=Imp|VerbForm=Fin	8	parataxis	_	_
+12	Pepsi	Pepsi	PROPN	NNP	Number=Sing	11	dobj	_	SpaceAfter=No
+13	!	!	PUNCT	.	_	1	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 11	bgColor:blue
+# visual-style 11	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 11 parataxis	color:blue
+1	The	the	DET	DT	Definite=Def|PronType=Art	2	det	_	_
+2	room	room	NOUN	NN	Number=Sing	4	nsubj	_	_
+3	is	be	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
+4	silent	silent	ADJ	JJ	Degree=Pos	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	,	_	4	punct	_	_
+6	none	none	NOUN	NN	Number=Sing	11	nsubj	_	_
+7	of	of	ADP	IN	_	10	case	_	_
+8	the	the	DET	DT	Definite=Def|PronType=Art	10	det	_	_
+9	other	other	ADJ	JJ	Degree=Pos	10	amod	_	_
+10	children	child	NOUN	NNS	Number=Plur	6	nmod	_	_
+11	volunteer	volunteer	VERB	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	4	parataxis	_	SpaceAfter=No
+12	.	.	PUNCT	.	_	4	punct	_	_
+
+</code></pre>
+
+<hr />
+
+<h2 id="treebank-statistics-udenglish-esl">Treebank Statistics (UD_English-ESL)</h2>
+
+<p>This relation is universal.</p>
+
+<p>517 nodes (1%) are attached to their parents as <code>parataxis</code>.</p>
+
+<p>512 instances of <code>parataxis</code> (99%) are left-to-right (parent precedes child).
+Average distance between parent and child is 12.0386847195358.</p>
+
+<p>The following 31 pairs of parts of speech are connected with <code>parataxis</code>: <a href="">en-pos/VERB</a>-<a href="">en-pos/VERB</a> (207; 40% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/VERB</a> (62; 12% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/VERB</a> (57; 11% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/ADJ</a> (53; 10% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/NOUN</a> (37; 7% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/ADJ</a> (16; 3% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/ADJ</a> (15; 3% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/NOUN</a> (13; 3% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/NOUN</a> (10; 2% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/VERB</a> (6; 1% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/VERB</a> (4; 1% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/ADJ</a> (3; 1% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/VERB</a> (3; 1% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/NOUN</a> (3; 1% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/VERB</a> (3; 1% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/ADV</a> (3; 1% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/PROPN</a> (3; 1% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/PRON</a> (2; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/PROPN</a> (2; 0% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/ADJ</a> (2; 0% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/NUM</a> (2; 0% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/PRON</a> (2; 0% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/NUM</a> (1; 0% instances), <a href="">en-pos/ADP</a>-<a href="">en-pos/VERB</a> (1; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/ADV</a> (1; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/NUM</a> (1; 0% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/PRON</a> (1; 0% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/ADJ</a> (1; 0% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/AUX</a> (1; 0% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/NOUN</a> (1; 0% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/AUX</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 21	bgColor:blue
+# visual-style 21	fgColor:white
+# visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 6 21 parataxis	color:blue
+1	_	_	ADP	IN	_	3	case	_	_
+2	_	_	DET	DT	_	3	det	_	_
+3	_	_	NOUN	NN	_	6	nmod	_	_
+4	_	_	PUNCT	,	_	6	punct	_	_
+5	_	_	PRON	PRP	_	6	nsubj	_	_
+6	_	_	VERB	VBD	_	0	root	_	_
+7	_	_	ADP	IN	_	8	case	_	_
+8	_	_	NOUN	NN	_	6	nmod	_	_
+9	_	_	ADV	RB	_	8	advmod	_	_
+10	_	_	PUNCT	-LRB-	_	11	punct	_	_
+11	_	_	CONJ	CC	_	8	cc	_	_
+12	_	_	NOUN	NN	_	8	conj	_	_
+13	_	_	ADP	IN	_	16	case	_	_
+14	_	_	DET	PRP$	_	16	nmod:poss	_	_
+15	_	_	ADJ	JJ	_	16	amod	_	_
+16	_	_	NOUN	NN	_	12	nmod	_	_
+17	_	_	PUNCT	-RRB-	_	12	punct	_	_
+18	_	_	PUNCT	:	_	6	punct	_	_
+19	_	_	AUX	VBP	_	21	aux	_	_
+20	_	_	PRON	PRP	_	21	nsubj	_	_
+21	_	_	VERB	VB	_	6	parataxis	_	_
+22	_	_	PRON	NN	_	23	nsubj	_	_
+23	_	_	VERB	VBP	_	21	ccomp	_	_
+24	_	_	PRON	PRP	_	23	iobj	_	_
+25	_	_	ADP	RP	_	23	compound:prt	_	_
+26	_	_	PRON	NN	_	23	dobj	_	_
+27	_	_	PUNCT	.	_	6	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 1 4 parataxis	color:blue
+1	_	_	NOUN	NN	_	0	root	_	_
+2	_	_	PUNCT	:	_	1	punct	_	_
+3	_	_	DET	DT	_	4	nsubj	_	_
+4	_	_	VERB	VBD	_	1	parataxis	_	_
+5	_	_	ADV	WRB	_	8	mark	_	_
+6	_	_	PROPN	NNP	_	8	nsubj	_	_
+7	_	_	PROPN	NNP	_	6	name	_	_
+8	_	_	VERB	VBD	_	4	advcl	_	_
+9	_	_	SCONJ	IN	_	11	mark	_	_
+10	_	_	PROPN	NNP	_	11	nsubj	_	_
+11	_	_	VERB	VB	_	8	ccomp	_	_
+12	_	_	SCONJ	IN	_	13	mark	_	_
+13	_	_	VERB	VB	_	11	xcomp	_	_
+14	_	_	ADP	IN	_	15	case	_	_
+15	_	_	NOUN	NN	_	13	nmod	_	_
+16	_	_	PUNCT	.	_	1	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 9	bgColor:blue
+# visual-style 9	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 9 parataxis	color:blue
+1	_	_	PRON	PRP	_	3	nsubj	_	_
+2	_	_	VERB	VBD	_	3	cop	_	_
+3	_	_	ADJ	JJ	_	0	root	_	_
+4	_	_	PUNCT	,	_	3	punct	_	_
+5	_	_	PRON	PRP	_	9	nsubj	_	_
+6	_	_	DET	DT	_	5	det	_	_
+7	_	_	AUX	VBD	_	9	aux	_	_
+8	_	_	PART	RB	_	9	neg	_	_
+9	_	_	VERB	VB	_	3	parataxis	_	_
+10	_	_	PRON	WP	_	12	dobj	_	_
+11	_	_	PART	TO	_	12	mark	_	_
+12	_	_	VERB	VB	_	9	xcomp	_	_
+13	_	_	PUNCT	.	_	3	punct	_	_
+
+</code></pre>
+
+<hr />
+
+<h2 id="treebank-statistics-udenglish-lines">Treebank Statistics (UD_English-LinES)</h2>
+
+<p>This relation is universal.</p>
+
+<p>127 nodes (0%) are attached to their parents as <code>parataxis</code>.</p>
+
+<p>125 instances of <code>parataxis</code> (98%) are left-to-right (parent precedes child).
+Average distance between parent and child is 5.8740157480315.</p>
+
+<p>The following 26 pairs of parts of speech are connected with <code>parataxis</code>: <a href="">en-pos/VERB</a>-<a href="">en-pos/VERB</a> (57; 45% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/VERB</a> (15; 12% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/VERB</a> (9; 7% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/INTJ</a> (8; 6% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/VERB</a> (4; 3% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/NOUN</a> (4; 3% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/INTJ</a> (3; 2% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/VERB</a> (3; 2% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/ADJ</a> (3; 2% instances), <a href="">en-pos/ADJ</a>-<a href="">en-pos/INTJ</a> (2; 2% instances), <a href="">en-pos/AUX</a>-<a href="">en-pos/VERB</a> (2; 2% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/VERB</a> (2; 2% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/ADV</a> (2; 2% instances), <a href="">en-pos/ADP</a>-<a href="">en-pos/ADV</a> (1; 1% instances), <a href="">en-pos/ADP</a>-<a href="">en-pos/INTJ</a> (1; 1% instances), <a href="">en-pos/ADV</a>-<a href="">en-pos/NOUN</a> (1; 1% instances), <a href="">en-pos/INTJ</a>-<a href="">en-pos/INTJ</a> (1; 1% instances), <a href="">en-pos/INTJ</a>-<a href="">en-pos/NOUN</a> (1; 1% instances), <a href="">en-pos/INTJ</a>-<a href="">en-pos/VERB</a> (1; 1% instances), <a href="">en-pos/NOUN</a>-<a href="">en-pos/NOUN</a> (1; 1% instances), <a href="">en-pos/NUM</a>-<a href="">en-pos/VERB</a> (1; 1% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/INTJ</a> (1; 1% instances), <a href="">en-pos/PRON</a>-<a href="">en-pos/PRON</a> (1; 1% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/NOUN</a> (1; 1% instances), <a href="">en-pos/PROPN</a>-<a href="">en-pos/PRON</a> (1; 1% instances), <a href="">en-pos/VERB</a>-<a href="">en-pos/AUX</a> (1; 1% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 8 parataxis	color:blue
+1	Maybe	_	ADV	_	_	3	advmod	_	_
+2	I	_	PRON	PERS-P1SG-NOM	_	3	nsubj	_	_
+3	make	_	VERB	PRES	_	0	root	_	_
+4	you	_	PRON	PERS-P2	_	3	dobj	_	_
+5	the	_	DET	DEF	_	6	det	_	_
+6	manager	_	NOUN	SG	_	3	xcomp	_	_
+7	,	_	PUNCT	Comma	_	3	punct	_	_
+8	said	_	VERB	PAST	_	3	parataxis	_	_
+9	the	_	DET	DEF	_	10	det	_	_
+10	counterman	_	NOUN	SG	_	8	nsubj	_	_
+11	.	_	PUNCT	Period	_	3	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 9	bgColor:blue
+# visual-style 9	fgColor:white
+# visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 2 9 parataxis	color:blue
+1	No	_	DET	NEG	_	2	neg	_	_
+2	questions	_	NOUN	PL	_	0	root	_	_
+3	,	_	PUNCT	Comma	_	2	punct	_	_
+4	please	_	INTJ	_	_	2	parataxis	_	_
+5	,	_	PUNCT	Comma	_	2	punct	_	_
+6	the	_	DET	DEF	_	8	det	_	_
+7	young	_	ADJ	POS	_	8	amod	_	_
+8	man	_	NOUN	SG	_	9	nsubj	_	_
+9	said	_	VERB	PAST	_	2	parataxis	_	_
+10	at	_	ADV	_	_	9	advmod	_	_
+11	last	_	ADV	_	_	10	mwe	_	_
+12	.	_	PUNCT	Period	_	2	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 8 parataxis	color:blue
+1	'	_	PUNCT	Quote	_	4	punct	_	_
+2	What	_	PRON	WH	_	4	discourse	_	_
+3	!	_	PUNCT	ExclMark	_	8	punct	_	_
+4	Dead	_	ADJ	POS	_	0	root	_	_
+5	?	_	PUNCT	QuestionMark	_	8	punct	_	_
+6	'	_	PUNCT	Quote	_	4	punct	_	_
+7	I	_	PRON	PERS-P1SG-NOM	_	8	nsubj	_	_
+8	asked	_	VERB	PAST	_	4	parataxis	_	_
+9	,	_	PUNCT	_	_	8	punct	_	_
+10	startled	_	VERB	PAST	_	8	conj	_	_
+11	.	_	PUNCT	Period	_	4	punct	_	_
+
+</code></pre>
+
+
+
+
+<!-- "in other languages" links -->
+<hr/>
+
+parataxis in other languages:
+
+[<a href="../../bg/dep/parataxis.html">bg</a>]
+
+[<a href="../../cs/dep/parataxis.html">cs</a>]
+
+[<a href="../../de/dep/parataxis.html">de</a>]
+
+[<a href="../../el/dep/parataxis.html">el</a>]
+
+[<a href="../../en/dep/parataxis.html">en</a>]
+
+[<a href="../../es/dep/parataxis.html">es</a>]
+
+[<a href="../../eu/dep/parataxis.html">eu</a>]
+
+[<a href="../../fa/dep/parataxis.html">fa</a>]
+
+[<a href="../../fi/dep/parataxis.html">fi</a>]
+
+[<a href="../../fr/dep/parataxis.html">fr</a>]
+
+[<a href="../../ga/dep/parataxis.html">ga</a>]
+
+[<a href="../../he/dep/parataxis.html">he</a>]
+
+[<a href="../../hu/dep/parataxis.html">hu</a>]
+
+[<a href="../../it/dep/parataxis.html">it</a>]
+
+[<a href="../../ja/dep/parataxis.html">ja</a>]
+
+[<a href="../../ko/dep/parataxis.html">ko</a>]
+
+[<a href="../../sv/dep/parataxis.html">sv</a>]
+
+[<a href="../../u/dep/parataxis.html">u</a>]
+
+
+
+
+      </div>
+
+<!-- support for embedded visualizations -->
+<script type="text/javascript">
+    var root = '../../'; // filled in by jekyll
+    head.js(
+        // External libraries
+        root + 'lib/ext/jquery.min.js',
+        root + 'lib/ext/jquery.svg.min.js',
+        root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
+        root + 'lib/ext/jquery-ui.min.js',
+        root + 'lib/ext/waypoints.min.js',
+        root + 'lib/ext/jquery.address.min.js',
+
+        // brat helper modules
+        root + 'lib/brat/configuration.js',
+        root + 'lib/brat/util.js',
+        root + 'lib/brat/annotation_log.js',
+        root + 'lib/ext/webfont.js',
+        // brat modules
+        root + 'lib/brat/dispatcher.js',
+        root + 'lib/brat/url_monitor.js',
+        root + 'lib/brat/visualizer.js',
+
+        // embedding configuration
+        root + 'lib/local/config.js',
+        // project-specific collection data
+        root + 'lib/local/collections.js',
+
+        // NOTE: non-local libraries
+        'https://spyysalo.github.io/annodoc/lib/local/annodoc.js',
+        'https://spyysalo.github.io/conllu.js/conllu.js'
+    );
+
+    var webFontURLs = [
+//        root + 'static/fonts/Astloch-Bold.ttf',
+        root + 'static/fonts/PT_Sans-Caption-Web-Regular.ttf',
+        root + 'static/fonts/Liberation_Sans-Regular.ttf'
+    ];
+
+    var setupAccordions = function() {
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
+	$(".jquery-ui-accordion").accordion({
+	    collapsible: true,
+	    active: false,
+	    change: accordionChange
+	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
+    };
+
+    var setupTabs = function() {
+        // standard jQuery UI "tabs" element initialization
+        $(".jquery-ui-tabs").tabs({ heightStyle: "auto" });
+
+        // use jQuery address to preserve tab state
+        // (see https://github.com/UniversalDependencies/docs/issues/65,
+        // http://stackoverflow.com/a/3330919)
+        if ($(".jquery-ui-tabs").length > 0) {
+            $.address.change(function(event){
+	        $(".jquery-ui-tabs").tabs("select", window.location.hash)
+	    });
+	    $(".jquery-ui-tabs").bind("tabsselect", function(event, ui) { 
+	        window.location.hash = ui.tab.hash;
+	    });
+        }
+    };
+
+    head.ready(function() {
+        // set up UI tabs on page
+        setupTabs();
+        setupAccordions();
+        setupTimeago();
+
+        // mark current collection (filled in by Jekyll)
+        Collections.listing['_current'] = 'en-dep';
+
+	// perform all embedding and support functions
+	Annodoc.activate(Config.bratCollData, Collections.listing);
+    });
+</script>
+
+
+<!-- google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55233688-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+      <div id="footer">
+	  <p class="footer-text">&copy; 2014 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-GB" xml:lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Case</title>
+    <link rel="root" href=""/> <!-- for JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/jquery-ui-redmond.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
+    <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+<!--     <link rel="shortcut icon" href="favicon.ico"/> -->
+
+
+  </head>
+  <body>
+    <div id="main" class="center">
+
+      <div id="hp-header">
+	
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ar">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ar/feat">ar/feat</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ar-feat/Case.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+      </div>
+
+      <hr/>
+
+      <div id="content">
+	<noscript>
+	  <div id="noscript">
+	    It appears that you have Javascript disabled.
+	    Please consider enabling Javascript for this page to see the visualizations.
+	  </div>
+	</noscript>
+
+          <h2><code>Case</code>: case</h2>
+
+<p>This document is a placeholder for the language-specific documentation
+for <code>Case</code>.</p>
+
+
+<!-- "automatic stats" -->
+
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udarabic">Treebank Statistics (UD_Arabic)</h2>
+
+<p>This feature is universal.
+It occurs with 3 different values: <code>Acc</code>, <code>Gen</code>, <code>Nom</code>.</p>
+
+<p>144002 tokens (51%) have a non-empty value of <code>Case</code>.
+15061 types (57%) occur at least once with a non-empty value of <code>Case</code>.
+6378 lemmas (38%) occur at least once with a non-empty value of <code>Case</code>.
+The feature is used with 6 part-of-speech tags: <a href="">ar-pos/NOUN</a> (92051; 33% instances), <a href="">ar-pos/ADJ</a> (29221; 10% instances), <a href="">ar-pos/PRON</a> (12942; 5% instances), <a href="">ar-pos/ADP</a> (5971; 2% instances), <a href="">ar-pos/NUM</a> (2206; 1% instances), <a href="">ar-pos/DET</a> (1611; 1% instances).</p>
+
+<h3 id="noun"><code>NOUN</code></h3>
+
+<p>92051 <a href="">ar-pos/NOUN</a> tokens (100% of all <code>NOUN</code> tokens) have a non-empty value of <code>Case</code>.</p>
+
+<p>The most frequent other feature values with which <code>NOUN</code> and <code>Case</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (70854; 77%).</p>
+
+<p><code>NOUN</code> tokens may have the following values of <code>Case</code>:</p>
+
+<ul>
+  <li><code>Acc</code> (14078; 15% of non-empty <code>Case</code>): اليوم، يوم، عام، الثلاثاء، السبت، غير، كل، الحكومة، مصر، مساء</li>
+  <li><code>Gen</code> (66159; 72% of non-empty <code>Case</code>): مصر، دولار، العراق، جنيه، مجلس، كل، الحكومة، الدول، الرئيس، مايو</li>
+  <li><code>Nom</code> (11814; 13% of non-empty <code>Case</code>): رئيس، وزير، الدكتور، الحكومة، مصر، الرئيس، عدد، مصادر، التقرير، الولايات</li>
+</ul>
+
+<table>
+  <tr><th>Paradigm <i>يَوم</i></th><th><tt>Nom</tt></th><th><tt>Acc</tt></th><th><tt>Gen</tt></th></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Def|<a href="Number.html">Number</a>=Sing</tt></td><td>اليوم</td><td>اليوم</td><td>اليوم</td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Def|<a href="Number.html">Number</a>=Dual</tt></td><td></td><td></td><td>اليومين</td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Def|<a href="Number.html">Number</a>=Plur</tt></td><td>الايام, الأيام</td><td>الأيام, الايام</td><td>الايام, الأيام</td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Ind|<a href="Number.html">Number</a>=Sing</tt></td><td>يوم</td><td>يوما, يوماً</td><td>يوم</td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Ind|<a href="Number.html">Number</a>=Dual</tt></td><td></td><td>يومين</td><td>يومين</td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Ind|<a href="Number.html">Number</a>=Plur</tt></td><td></td><td>اياما</td><td>أيام, ايام</td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Red|<a href="Number.html">Number</a>=Sing</tt></td><td>يوم</td><td>يوم</td><td>يوم</td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Red|<a href="Number.html">Number</a>=Dual</tt></td><td></td><td>يومي, يومى</td><td></td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Red|<a href="Number.html">Number</a>=Plur</tt></td><td>أيام</td><td>ايام, أيام</td><td>أيام</td></tr>
+</table>
+
+<h3 id="adj"><code>ADJ</code></h3>
+
+<p>29221 <a href="">ar-pos/ADJ</a> tokens (100% of all <code>ADJ</code> tokens) have a non-empty value of <code>Case</code>.</p>
+
+<p>The most frequent other feature values with which <code>ADJ</code> and <code>Case</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (27495; 94%), <tt><a href="Definite.html">Definite</a>=Def</tt> (18902; 65%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (15039; 51%).</p>
+
+<p><code>ADJ</code> tokens may have the following values of <code>Case</code>:</p>
+
+<ul>
+  <li><code>Acc</code> (5466; 19% of non-empty <code>Case</code>): خاصة، الماضي، حالياً، حاليا، مشيراً، أكثر، المقبل، مشيرا، أي، المتحدة</li>
+  <li><code>Gen</code> (19101; 65% of non-empty <code>Case</code>): المصرية، المتحدة، المصري، العربية، الماضي، الحالي، الفلسطينية، الدولية، أي، جديدة</li>
+  <li><code>Nom</code> (4654; 16% of non-empty <code>Case</code>): المتحدة، المصرية، المصري، العام، كبير، السابق، السوري، أسعد، الاسرائيلي، الدولي</li>
+</ul>
+
+<table>
+  <tr><th>Paradigm <i>مِصرِيّ</i></th><th><tt>Nom</tt></th><th><tt>Acc</tt></th><th><tt>Gen</tt></th></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Def|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td>المصري, المصرى</td><td>المصري</td><td>المصري, المصرى</td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Def|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur</tt></td><td>المصريون</td><td>المصريين</td><td>المصريين</td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Def|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td>المصرية</td><td>المصرية, المصـــرية</td><td>المصرية, المصريةـ</td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Def|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Dual</tt></td><td></td><td></td><td>المصريتين</td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Ind|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td>مصري</td><td>مصرياً</td><td>مصري</td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Ind|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Dual</tt></td><td></td><td>مصريين</td><td></td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Ind|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur</tt></td><td>مصريون</td><td>مصريين</td><td>مصريين</td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Ind|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td>مصرية</td><td>مصرية</td><td>مصرية</td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Ind|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Dual</tt></td><td>مصريتان</td><td></td><td></td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Ind|<a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Plur</tt></td><td></td><td></td><td>مصريات</td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Red|<a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td>مصري</td><td></td><td></td></tr>
+</table>
+
+<h3 id="pron"><code>PRON</code></h3>
+
+<p>12942 <a href="">ar-pos/PRON</a> tokens (93% of all <code>PRON</code> tokens) have a non-empty value of <code>Case</code>.</p>
+
+<p>The most frequent other feature values with which <code>PRON</code> and <code>Case</code> co-occurred: <tt><a href="Number.html">Number</a>=Sing</tt> (11359; 88%), <tt><a href="PronType.html">PronType</a>=Prs</tt> (9991; 77%), <tt><a href="Person.html">Person</a>=3</tt> (9693; 75%), <tt><a href="Gender.html">Gender</a>=Masc</tt> (7253; 56%).</p>
+
+<p><code>PRON</code> tokens may have the following values of <code>Case</code>:</p>
+
+<ul>
+  <li><code>Acc</code> (2816; 22% of non-empty <code>Case</code>): ه، ها، التي، هم، الذي، ذلك، نا، التى، ك، الذين</li>
+  <li><code>Gen</code> (8770; 68% of non-empty <code>Case</code>): ها، ه، التي، هم، الذي، ذلك، الذين، ك، التى، هما</li>
+  <li><code>Nom</code> (1356; 10% of non-empty <code>Case</code>): هو، هي، الذي، التي، هم، ذٰلك، ذلك، هذا، الذين، التى</li>
+  <li><code>EMPTY</code> (916): ما، من، كيف، كم، ماذا، أين، متى، لماذا، هكذا، اين</li>
+</ul>
+
+<table>
+  <tr><th>Paradigm <i>هُوَ</i></th><th><tt>Nom</tt></th><th><tt>Acc</tt></th><th><tt>Gen</tt></th></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=1</tt></td><td>أنا, انا</td><td>ني</td><td>ي</td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=2</tt></td><td>أنت</td><td>ك</td><td>ك</td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3</tt></td><td>هو</td><td>ه</td><td>ه, زنزانته, استعداداته, بلاده, والده, طائرته, لاراضيه, تجهيزه, وغربه, مستقبله, انتشاره, إدانته, حكومته</td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Dual|<a href="Person.html">Person</a>=3</tt></td><td>هما</td><td>هما</td><td>هما</td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=1</tt></td><td>نحن</td><td>نا</td><td>نا, لمساعدتنا</td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=2</tt></td><td>انتم, أنتم</td><td>كم</td><td>كم</td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3</tt></td><td>هم</td><td>هم</td><td>هم, شفائهم, بهم, بأنفسهم, استبعادهم, بلادهم, لهم</td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=2</tt></td><td></td><td></td><td>ك</td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing|<a href="Person.html">Person</a>=3</tt></td><td>هي, هى, وهي</td><td>ها</td><td>ها, بضمانها, مواجهتها, أهدافها, تجميدها, تخصيصها, نهايتها, بهويتها, بفقدانها, مستشفياتها, أعضائها, تجارتها, إليها</td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Dual|<a href="Person.html">Person</a>=3</tt></td><td>هما</td><td>هما</td><td>هما</td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Plur|<a href="Person.html">Person</a>=3</tt></td><td>هن</td><td>هن</td><td>هن</td></tr>
+</table>
+
+<h3 id="adp"><code>ADP</code></h3>
+
+<p>5971 <a href="">ar-pos/ADP</a> tokens (14% of all <code>ADP</code> tokens) have a non-empty value of <code>Case</code>.</p>
+
+<p>The most frequent other feature values with which <code>ADP</code> and <code>Case</code> co-occurred: <tt><a href="AdpType.html">AdpType</a>=Prep</tt> (5971; 100%).</p>
+
+<p><code>ADP</code> tokens may have the following values of <code>Case</code>:</p>
+
+<ul>
+  <li><code>Acc</code> (5346; 90% of non-empty <code>Case</code>): مع، بين، خلال، بعد، حول، قبل، ضد، نحو، مقابل، أمام</li>
+  <li><code>Gen</code> (570; 10% of non-empty <code>Case</code>): خلال، دون، نحو، بين، حين، حسب، مثل، مقابل، قبل، خارج</li>
+  <li><code>Nom</code> (55; 1% of non-empty <code>Case</code>): بعد، مثل، قبل، مقابل</li>
+  <li><code>EMPTY</code> (35908): في، ل، ب، من، على، الى، إلى، عن، فى، منذ</li>
+</ul>
+
+<table>
+  <tr><th>Paradigm <i>بَعدَ</i></th><th><tt>Nom</tt></th><th><tt>Acc</tt></th><th><tt>Gen</tt></th></tr>
+  <tr><td><tt></tt></td><td>بعد</td><td>بعد</td><td>بعد</td></tr>
+</table>
+
+<h3 id="num"><code>NUM</code></h3>
+
+<p>2206 <a href="">ar-pos/NUM</a> tokens (28% of all <code>NUM</code> tokens) have a non-empty value of <code>Case</code>.</p>
+
+<p>The most frequent other feature values with which <code>NUM</code> and <code>Case</code> co-occurred: <tt><a href="NumForm.html">NumForm</a>=Word</tt> (2206; 100%), <tt><a href="Definite.html">Definite</a>=Red</tt> (1519; 69%), <tt><a href="Number.html">Number</a>=Sing</tt> (1155; 52%).</p>
+
+<p><code>NUM</code> tokens may have the following values of <code>Case</code>:</p>
+
+<ul>
+  <li><code>Acc</code> (831; 38% of non-empty <code>Case</code>): مليون، ألف، مليار، بليون، الف، ثلاثة، مليوناً، ملياراً، خمسة، مليونا</li>
+  <li><code>Gen</code> (1233; 56% of non-empty <code>Case</code>): مليون، مليار، ملايين، المئة، ثلاثة، المائة، ألف، بليون، آلاف، الف</li>
+  <li><code>Nom</code> (142; 6% of non-empty <code>Case</code>): ثلاثة، خمسة، ثلاث، عشرة، اثنان، الثلاثة، ستة، عشرات، واحد، اربعة</li>
+  <li><code>EMPTY</code> (5550): 15، 3، 6، 2، 8، 7، 4، 11، 10، 12</li>
+</ul>
+
+<table>
+  <tr><th>Paradigm <i>مِليُون</i></th><th><tt>Nom</tt></th><th><tt>Acc</tt></th><th><tt>Gen</tt></th></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Def|<a href="Number.html">Number</a>=Sing</tt></td><td></td><td>المليون</td><td>المليون</td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Def|<a href="Number.html">Number</a>=Plur</tt></td><td>الملايين</td><td></td><td>الملايين</td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Ind|<a href="Number.html">Number</a>=Sing</tt></td><td></td><td>مليوناً, مليونا</td><td>مليون, ملــيون</td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Ind|<a href="Number.html">Number</a>=Plur</tt></td><td></td><td></td><td>ملايين</td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Red|<a href="Number.html">Number</a>=Sing</tt></td><td>مليون</td><td>مليون, ملـيون</td><td>مليون</td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Red|<a href="Number.html">Number</a>=Dual</tt></td><td>مليونا</td><td>مليوني</td><td>مليوني</td></tr>
+  <tr><td><tt><a href="Definite.html">Definite</a>=Red|<a href="Number.html">Number</a>=Plur</tt></td><td>ملايين</td><td>ملايين</td><td>ملايين</td></tr>
+  <tr><td><tt><a href="Negative.html">Negative</a>=Neg|<a href="Number.html">Number</a>=Sing</tt></td><td></td><td>مليون</td><td></td></tr>
+</table>
+
+<h3 id="det"><code>DET</code></h3>
+
+<p>1611 <a href="">ar-pos/DET</a> tokens (85% of all <code>DET</code> tokens) have a non-empty value of <code>Case</code>.</p>
+
+<p>The most frequent other feature values with which <code>DET</code> and <code>Case</code> co-occurred: <tt><a href="PronType.html">PronType</a>=Dem</tt> (1599; 99%), <tt><a href="Number.html">Number</a>=Sing</tt> (1564; 97%), <tt><a href="Gender.html">Gender</a>=Fem</tt> (833; 52%).</p>
+
+<p><code>DET</code> tokens may have the following values of <code>Case</code>:</p>
+
+<ul>
+  <li><code>Acc</code> (306; 19% of non-empty <code>Case</code>): هذا، هذه، تلك، هؤلاء، ذلك، التي، الذي، ذا، هذين، هــــذه</li>
+  <li><code>Gen</code> (1069; 66% of non-empty <code>Case</code>): هذه، هذا، هٰذه، هٰذا، ذلك، تلك، هؤلاء، ذٰلك، هذين، الذين</li>
+  <li><code>Nom</code> (236; 15% of non-empty <code>Case</code>): هذه، هذا، تلك، هٰذا، هٰذه، ذلك، هؤلاء، التي، الذي، هاتان</li>
+  <li><code>EMPTY</code> (291): ما، من، كيف، لماذا، ماذا</li>
+</ul>
+
+<table>
+  <tr><th>Paradigm <i>هٰذَا</i></th><th><tt>Nom</tt></th><th><tt>Acc</tt></th><th><tt>Gen</tt></th></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Sing</tt></td><td>هذا, هٰذا</td><td>هذا</td><td>هذا, هٰذا</td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Dual</tt></td><td>هٰذان</td><td>هذين</td><td>هذين</td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Masc|<a href="Number.html">Number</a>=Plur</tt></td><td>هؤلاء</td><td>هؤلاء</td><td>هؤلاء, هٰؤلاء</td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Sing</tt></td><td>هذه, هٰذه</td><td>هذه, هٰذه, هــــذه</td><td>هذه, هٰذه, هذــه, هـــذه</td></tr>
+  <tr><td><tt><a href="Gender.html">Gender</a>=Fem|<a href="Number.html">Number</a>=Dual</tt></td><td>هاتان</td><td></td><td>هاتين</td></tr>
+</table>
+
+<h2 id="relations-with-agreement-in-case">Relations with Agreement in <code>Case</code></h2>
+
+<p>The 10 most frequent relations where parent and child node agree in <code>Case</code>:
+<tt>NOUN –[<a href="../dep/nmod.html">nmod</a>]–&gt; NOUN</tt> (27205; 70%),
+<tt>NOUN –[<a href="../dep/amod.html">amod</a>]–&gt; ADJ</tt> (22129; 97%),
+<tt>NOUN –[<a href="../dep/conj.html">conj</a>]–&gt; NOUN</tt> (5144; 97%),
+<tt>NOUN –[<a href="../dep/nmod.html">nmod</a>]–&gt; PRON</tt> (3205; 66%),
+<tt>NOUN –[<a href="../dep/cc.html">cc</a>]–&gt; PRON</tt> (2449; 95%),
+<tt>NOUN –[<a href="../dep/det.html">det</a>]–&gt; DET</tt> (1580; 87%),
+<tt>ADJ –[<a href="../dep/nmod.html">nmod</a>]–&gt; NOUN</tt> (1512; 53%),
+<tt>NOUN –[<a href="../dep/dobj.html">dobj</a>]–&gt; NOUN</tt> (1244; 59%),
+<tt>ADJ –[<a href="../dep/conj.html">conj</a>]–&gt; ADJ</tt> (831; 98%),
+<tt>NOUN –[<a href="../dep/cc.html">cc</a>]–&gt; NOUN</tt> (827; 71%).</p>
+
+
+
+
+<!-- "in other languages" links -->
+<hr/>
+
+Case in other languages:
+
+[<a href="../../bg/feat/Case.html">bg</a>]
+
+[<a href="../../cs/feat/Case.html">cs</a>]
+
+[<a href="../../de/feat/Case.html">de</a>]
+
+[<a href="../../el/feat/Case.html">el</a>]
+
+[<a href="../../en/feat/Case.html">en</a>]
+
+[<a href="../../es/feat/Case.html">es</a>]
+
+[<a href="../../eu/feat/Case.html">eu</a>]
+
+[<a href="../../fa/feat/Case.html">fa</a>]
+
+[<a href="../../fi/feat/Case.html">fi</a>]
+
+[<a href="../../fr/feat/Case.html">fr</a>]
+
+[<a href="../../ga/feat/Case.html">ga</a>]
+
+[<a href="../../he/feat/Case.html">he</a>]
+
+[<a href="../../hu/feat/Case.html">hu</a>]
+
+[<a href="../../it/feat/Case.html">it</a>]
+
+[<a href="../../ja/feat/Case.html">ja</a>]
+
+[<a href="../../ko/feat/Case.html">ko</a>]
+
+[<a href="../../sv/feat/Case.html">sv</a>]
+
+[<a href="../../u/feat/Case.html">u</a>]
+
+
+
+
+      </div>
+
+<!-- support for embedded visualizations -->
+<script type="text/javascript">
+    var root = '../../'; // filled in by jekyll
+    head.js(
+        // External libraries
+        root + 'lib/ext/jquery.min.js',
+        root + 'lib/ext/jquery.svg.min.js',
+        root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
+        root + 'lib/ext/jquery-ui.min.js',
+        root + 'lib/ext/waypoints.min.js',
+        root + 'lib/ext/jquery.address.min.js',
+
+        // brat helper modules
+        root + 'lib/brat/configuration.js',
+        root + 'lib/brat/util.js',
+        root + 'lib/brat/annotation_log.js',
+        root + 'lib/ext/webfont.js',
+        // brat modules
+        root + 'lib/brat/dispatcher.js',
+        root + 'lib/brat/url_monitor.js',
+        root + 'lib/brat/visualizer.js',
+
+        // embedding configuration
+        root + 'lib/local/config.js',
+        // project-specific collection data
+        root + 'lib/local/collections.js',
+
+        // NOTE: non-local libraries
+        'https://spyysalo.github.io/annodoc/lib/local/annodoc.js',
+        'https://spyysalo.github.io/conllu.js/conllu.js'
+    );
+
+    var webFontURLs = [
+//        root + 'static/fonts/Astloch-Bold.ttf',
+        root + 'static/fonts/PT_Sans-Caption-Web-Regular.ttf',
+        root + 'static/fonts/Liberation_Sans-Regular.ttf'
+    ];
+
+    var setupAccordions = function() {
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
+	$(".jquery-ui-accordion").accordion({
+	    collapsible: true,
+	    active: false,
+	    change: accordionChange
+	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
+    };
+
+    var setupTabs = function() {
+        // standard jQuery UI "tabs" element initialization
+        $(".jquery-ui-tabs").tabs({ heightStyle: "auto" });
+
+        // use jQuery address to preserve tab state
+        // (see https://github.com/UniversalDependencies/docs/issues/65,
+        // http://stackoverflow.com/a/3330919)
+        if ($(".jquery-ui-tabs").length > 0) {
+            $.address.change(function(event){
+	        $(".jquery-ui-tabs").tabs("select", window.location.hash)
+	    });
+	    $(".jquery-ui-tabs").bind("tabsselect", function(event, ui) { 
+	        window.location.hash = ui.tab.hash;
+	    });
+        }
+    };
+
+    head.ready(function() {
+        // set up UI tabs on page
+        setupTabs();
+        setupAccordions();
+        setupTimeago();
+
+        // mark current collection (filled in by Jekyll)
+        Collections.listing['_current'] = 'ar-feat';
+
+	// perform all embedding and support functions
+	Annodoc.activate(Config.bratCollData, Collections.listing);
+    });
+</script>
+
+
+<!-- google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55233688-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+      <div id="footer">
+	  <p class="footer-text">&copy; 2014 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
+      </div>
+    </div>
+  </body>
+</html>

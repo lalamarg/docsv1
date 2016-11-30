@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-GB" xml:lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Dataset release checklist</title>
+    <link rel="root" href=""/> <!-- for JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui-redmond.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style-vis.css"/>
+    <link rel="stylesheet" type="text/css" href="css/hint.css"/>
+    <script type="text/javascript" src="lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="lib/ext/jquery.timeago.js.js"></script>
+<!--     <link rel="shortcut icon" href="favicon.ico"/> -->
+
+
+  </head>
+  <body>
+    <div id="main" class="center">
+
+      <div id="hp-header">
+	
+          <span class="header-text"><a href="http://universaldependencies.org/#language-">home</a></span>
+
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/release_checklist.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+      </div>
+
+      <hr/>
+
+      <div id="content">
+	<noscript>
+	  <div id="noscript">
+	    It appears that you have Javascript disabled.
+	    Please consider enabling Javascript for this page to see the visualizations.
+	  </div>
+	</noscript>
+
+          <h1 id="release-checklist">Release checklist</h1>
+
+<p>This checklist is meant to provide guidance for teams contributing treebank data for a new release of Universal Dependencies. It was created for release v1.2 and applies, unless otherwise noted, to any upcoming release.</p>
+
+<p>Contents:</p>
+
+<ul>
+  <li><a href="#executive-summary">Executive summary</a></li>
+  <li><a href="#repository-and-files">Repository and files</a>
+    <ul>
+      <li><a href="#language-metadata">Language metadata</a></li>
+      <li><a href="#repository-branches">Repository branches</a></li>
+    </ul>
+  </li>
+  <li><a href="#validation">Validation</a>
+    <ul>
+      <li><a href="#data-format-and-repository">Data format and repository</a></li>
+      <li><a href="#syntax">Syntax</a></li>
+    </ul>
+  </li>
+  <li><a href="#language-specific-guidelines">Language-specific guidelines</a></li>
+</ul>
+
+<h1 id="executive-summary">Executive summary</h1>
+
+<ul>
+  <li>Make sure <a href="#repository-and-files">your repository has the right files</a>, <a href="#language-metadata">correct metadata</a> in the README, and data being prepared for the next release <a href="#repository-branches">lives on the <code>dev</code> branch</a>.</li>
+  <li>Make sure your data and repository pass the <a href="#data-format-and-repository">format validation</a>: <a href="http://universaldependencies.org/validation.html">direct link</a> to the format validator output.</li>
+  <li>Make sure your data does not show major deviations in the <a href="#syntax">content validation</a>: <a href="http://universaldependencies.org/svalidation.html">direct link</a> to the content validator output.</li>
+</ul>
+
+<h1 id="repository-and-files">Repository and files</h1>
+
+<p>Every language has its own GitHub repository called <code>UD_Language</code>, where <code>Language</code> is the name of the language. For example, the repository for Finnish is called <code>UD_Finnish</code>. Make sure to create the repository for your language if it does not already exist.</p>
+
+<p>Every language repository should contain the following five files (where <code>xx</code> is the ISO code for the given language):</p>
+
+<ol>
+  <li><code>xx-ud-train.conllu</code></li>
+  <li><code>xx-ud-dev.conllu</code></li>
+  <li><code>xx-ud-test.conllu</code></li>
+  <li><code>README.txt</code> or <code>README.md</code></li>
+  <li><code>LICENSE.txt</code></li>
+</ol>
+
+<p>The first three files contain the treebank data split into a training, development and test set. These should be in <code>CONLL-U</code> format and conform to the universal guidelines. They need to be validated as described below. The <code>README.txt</code> file contains basic documentation of the treebank and machine-readable metadata for the UD main page (see below) and the <code>LICENSE.txt</code> specifies under what license the treebank is made available.</p>
+
+<p>The <code>README</code> file should minimally contain the following information:</p>
+
+<ol>
+  <li>A description of the treebank and its origin (creation method, data sources, etc.)</li>
+  <li>A description of how the data was split into training, development and test sets</li>
+  <li>Basic statistics about number of sentences, tokens, etc.</li>
+  <li>Acknowledgments and references that should be cited when using the treebank</li>
+  <li>A machine-readable section with language metadata. This is described [here](</li>
+</ol>
+
+<p>Note that the basic statistics can be produced using the script <code>conllu-stats.py</code>available from the <code>tools</code> repository and run as follows:</p>
+
+<pre><code>$ python conllu-stats.py --stats ../UD_Finnish/*.conllu
+</code></pre>
+
+<p>For previously released corpora, the README file should also include a “<a href="http://en.wikipedia.org/wiki/Changelog">changelog</a>” section summarizing changes between versions e.g. as follows</p>
+
+<p>```
+Changelog</p>
+
+<p>2015-05-15 v1.1</p>
+
+<pre><code>* Added lemmas
+
+* Corrected tokenization in sentences 123 and 456 ```
+</code></pre>
+
+<h2 id="language-metadata">Language metadata</h2>
+
+<p>The readme file contains metadata used to generate the overview table on the UD main page: data source, license, genres, and documentation status. The format of this metadata is described <a href="http://universaldependencies.org/language_metadata.html">here</a></p>
+
+<p>The table on the front page is automatically generated from special lines in the <code>README.txt</code> or <code>README.md</code> file for every language. This means that in order to add a new language, also its repository must be created, minimally with the readme file. Here is an example of the language metadata block from the <a href="https://github.com/UniversalDependencies/UD_Finnish/blob/master/README.txt">Finnish README file</a></p>
+
+<pre><code>Documentation status: complete
+Data source: semi-automatic
+Data available since: UD v1.0
+License: CC BY-SA 4.0
+Genre: blog wiki legal news fiction
+Contributors: Ginter, Filip; Kanerva, Jenna; Laippala, Veronika; Missilä, Anna; Pyysalo, Sampo
+</code></pre>
+
+<p>This block can be anywhere in the readme file. The properties are as follows:</p>
+
+<ul>
+  <li><code>Documentation status</code> can be <code>complete</code>, <code>partial</code>, or <code>stub</code>.</li>
+  <li><code>Data source</code> can be <code>automatic</code>, <code>semi-automatic</code>, or <code>manual</code>. Here, as a rough guidance, <code>manual</code> means that every word of every sentence has been manually checked, whereas <code>semi-automatic</code> means an automatic conversion with major manual checks of various types of constructions.</li>
+  <li><code>Data available since</code> can be <code>UD v1.0</code>, <code>UD v1.1</code>, <code>UD v1.2</code>, and <code>UD v1.3</code>. As the current release is 1.2, new languages which will be included in 1.3 should set this property accordingly.</li>
+  <li><code>License</code>: anything containing the string <code>BY-NC-SA</code> will be given the CC non-commercial logo, <code>BY-SA</code> or <code>BY</code> the CC logo, and <code>GNU</code> the GNU logo. To add any other license, please provide a suitable icon to ginter@cs.utu.fi and sampo.pyysalo@gmail.com.</li>
+  <li><code>Genre</code>: this is simply a space-separated list of genres which gets mapped into symbols in the table. The possible genres are listed in <a href="https://github.com/UniversalDependencies/docs/blob/pages-source/gen_index/genre_symbols.json">this file</a> in the repository. If you don’t see yours, just edit the file on GitHub and add your genre, choosing one of the symbols from <a href="https://fortawesome.github.io/Font-Awesome/icons/">the <em>FontAwesome</em> list</a>. Please make sure you get the syntax right, since this is a machine-readable JSON file. It is also possible to not add the genre to the <code>genre_symbols.json</code> file, in which case the default symbol will be used automatically. The genre name will still remain visible in the mouse-over tooltip.</li>
+  <li><code>Contributors</code>: the list of contributors to be included with the data release and in the LINDAT download page. This is a semi-colon separated list where every name is in the <code>Last, First</code> form and the readme file should be utf-8 encoded to make sure special characters are preserved correctly.</li>
+</ul>
+
+<h2 id="repository-branches">Repository branches</h2>
+
+<p>While the official UD release is always through Lindat, many users of UD source their data from the GitHub language repositories. Therefore, the <code>master</code> branch of every language should contain the last, officially released version of the data for the given language. The development in between releases should happen on the <code>dev</code> branch of the repository.</p>
+
+<h1 id="validation">Validation</h1>
+
+<h2 id="data-format-and-repository">Data format and repository</h2>
+
+<p>Up-to-date automatic validation runs of the repositories are available <a href="http://universaldependencies.org/validation.html">here</a>. These are based on the <code>dev</code> branch of the data and use the <code>validate.py</code> script described below.</p>
+
+<p>The final data validation is an important step and each file released
+in the project is expected to validate as conforming to the basic
+requirements on the data and format. For this purpose, there is a
+validation script in the tools repository.</p>
+
+<pre><code>$ git clone git@github.com:UniversalDependencies/tools.git
+$ cd tools
+$ python validate.py -h
+</code></pre>
+
+<p>In general, you validate the data like so:</p>
+
+<pre><code>python validate.py --lang=xx [file.conllu]
+</code></pre>
+
+<p>for example for Finnish:</p>
+
+<pre><code>$ python validate.py --lang=fi ../UD_Finnish/fi-ud-dev.conllu 
+*** PASSED ***
+</code></pre>
+
+<p>Among other items, the script also validates the language-specific set
+of tags and relations and therefore it needs to know about these. The
+language-specific lists are stored in <code>data/deprel.xx</code>
+(language-specific relations) and <code>data/feat_val.xx</code>
+(language-specific features). In addition <code>data/*.ud</code> stores the UD
+taglists. Before you can validate data for a given language, you need to
+produce and commit the necessary tag lists. You can make the initial lists
+like so:</p>
+
+<pre><code>$ python conllu-stats.py --deprels=langspec path_to_your_data/*.conllu &gt; data/deprel.xx
+$ python conllu-stats.py --catvals=langspec path_to_your_data/*.conllu &gt; data/feat_val.xx
+</code></pre>
+
+<p>This will gather the language-specific lists in descending order by
+their frequency. It is important to check the resulting files for
+correctness, because otherwise the validation would of course be a
+no-op. Once you have checked the lists manually, you can add them to
+the repository:</p>
+
+<pre><code>$ git add data/deprel.xx data/feat_val.xx
+$ git commit -m "Adding language-specific data for xx."
+$ git push
+</code></pre>
+
+<h1 id="syntax">Syntax</h1>
+
+<p>For the <code>v1.3</code> release, we have created an additional number of tests which try to uncover possible logical inconsistencies in the treebank data. Automatic validation runs for this syntax validation are available <a href="http://universaldependencies.org/svalidation.html">here</a>. Unlike the data format and repository validation, this validation machinery is not streamlined enough to be distributed for offline use, therefore it is important to regularly push your data to the <code>dev</code> branch of the repository.</p>
+
+<p>The tests are specified in the file <code>gen_index/stests.yaml</code> and rely on the query language of the <a href="http://bionlp-www.utu.fi/dep_search">SETS search interface</a>.</p>
+
+<h1 id="language-specific-guidelines">Language-specific guidelines</h1>
+
+<p>Every treebank should be accompanied by a set of language-specific guidelines at http://universaldependencies.org/. These guidelines should minimally specify the following:</p>
+
+<ol>
+  <li>Tokenization: How was word segmentation performed? Does the treebank include multiword tokens?</li>
+  <li>POS tags: What universal POS tags (if any) are not used?</li>
+  <li>Features: What universal features are not used? What language-specific features/values have been added?</li>
+  <li>Relations: What universal relations are not used? What language-specific subtypes have been added?</li>
+</ol>
+
+<p>There are <a href="contributing_language_specific.html">more detailed guidelines for language-specific documentation.</a>
+Also see the general guidelines about <a href="contributing.html">how to contribute.</a></p>
+
+
+      </div>
+
+<!-- support for embedded visualizations -->
+<script type="text/javascript">
+    var root = ''; // filled in by jekyll
+    head.js(
+        // External libraries
+        root + 'lib/ext/jquery.min.js',
+        root + 'lib/ext/jquery.svg.min.js',
+        root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
+        root + 'lib/ext/jquery-ui.min.js',
+        root + 'lib/ext/waypoints.min.js',
+        root + 'lib/ext/jquery.address.min.js',
+
+        // brat helper modules
+        root + 'lib/brat/configuration.js',
+        root + 'lib/brat/util.js',
+        root + 'lib/brat/annotation_log.js',
+        root + 'lib/ext/webfont.js',
+        // brat modules
+        root + 'lib/brat/dispatcher.js',
+        root + 'lib/brat/url_monitor.js',
+        root + 'lib/brat/visualizer.js',
+
+        // embedding configuration
+        root + 'lib/local/config.js',
+        // project-specific collection data
+        root + 'lib/local/collections.js',
+
+        // NOTE: non-local libraries
+        'https://spyysalo.github.io/annodoc/lib/local/annodoc.js',
+        'https://spyysalo.github.io/conllu.js/conllu.js'
+    );
+
+    var webFontURLs = [
+//        root + 'static/fonts/Astloch-Bold.ttf',
+        root + 'static/fonts/PT_Sans-Caption-Web-Regular.ttf',
+        root + 'static/fonts/Liberation_Sans-Regular.ttf'
+    ];
+
+    var setupAccordions = function() {
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
+	$(".jquery-ui-accordion").accordion({
+	    collapsible: true,
+	    active: false,
+	    change: accordionChange
+	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
+    };
+
+    var setupTabs = function() {
+        // standard jQuery UI "tabs" element initialization
+        $(".jquery-ui-tabs").tabs({ heightStyle: "auto" });
+
+        // use jQuery address to preserve tab state
+        // (see https://github.com/UniversalDependencies/docs/issues/65,
+        // http://stackoverflow.com/a/3330919)
+        if ($(".jquery-ui-tabs").length > 0) {
+            $.address.change(function(event){
+	        $(".jquery-ui-tabs").tabs("select", window.location.hash)
+	    });
+	    $(".jquery-ui-tabs").bind("tabsselect", function(event, ui) { 
+	        window.location.hash = ui.tab.hash;
+	    });
+        }
+    };
+
+    head.ready(function() {
+        // set up UI tabs on page
+        setupTabs();
+        setupAccordions();
+        setupTimeago();
+
+        // mark current collection (filled in by Jekyll)
+        Collections.listing['_current'] = '';
+
+	// perform all embedding and support functions
+	Annodoc.activate(Config.bratCollData, Collections.listing);
+    });
+</script>
+
+
+<!-- google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55233688-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+      <div id="footer">
+	  <p class="footer-text">&copy; 2014 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
+      </div>
+    </div>
+  </body>
+</html>

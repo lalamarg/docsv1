@@ -1,0 +1,421 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-GB" xml:lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>compound</title>
+    <link rel="root" href=""/> <!-- for JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/jquery-ui-redmond.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
+    <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+<!--     <link rel="shortcut icon" href="favicon.ico"/> -->
+
+
+  </head>
+  <body>
+    <div id="main" class="center">
+
+      <div id="hp-header">
+	
+          <span class="header-text"><a href="http://universaldependencies.org/#language-pt">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/pt/dep">pt/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_pt-dep/compound.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+      </div>
+
+      <hr/>
+
+      <div id="content">
+	<noscript>
+	  <div id="noscript">
+	    It appears that you have Javascript disabled.
+	    Please consider enabling Javascript for this page to see the visualizations.
+	  </div>
+	</noscript>
+
+          <h2><code>compound</code>: compound</h2>
+
+<p><code>compound</code> is one of the three relations in UD for compounding.</p>
+
+<p>It is used for</p>
+
+<ul>
+  <li>
+    <p>any kind of X<sup>0</sup> compounding: noun compounds (e.g., <em>linha vermelha</em>), but also verb and
+adjective compounds that are more common in other languages (<em>guarda-chuva, nova era</em>). 
+~~~ sdparse
+nova era
+compound(era, nova)
+~~~</p>
+  </li>
+  <li>
+    <p>for numbers</p>
+  </li>
+</ul>
+
+<pre><code class="language-sdparse">a décima primeira rodada 
+compound(décima, primeira)
+</code></pre>
+
+<pre><code class="language-sdparse">vendas de US$ 150 milhões
+compound(milhões, 150)
+</code></pre>
+
+<p>The two other compounding relations are:</p>
+
+<ul>
+  <li><a href="">mwe</a> for fixed grammaticized expressions with function words</li>
+  <li><a href="">name</a> for proper nouns constituted of multiple nominal elements</li>
+</ul>
+
+
+<!-- "automatic stats" -->
+
+
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udportuguese">Treebank Statistics (UD_Portuguese)</h2>
+
+<p>This relation is universal.</p>
+
+<p>1140 nodes (1%) are attached to their parents as <code>compound</code>.</p>
+
+<p>1036 instances of <code>compound</code> (91%) are left-to-right (parent precedes child).
+Average distance between parent and child is 1.94385964912281.</p>
+
+<p>The following 25 pairs of parts of speech are connected with <code>compound</code>: <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/NOUN</a> (609; 53% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/SCONJ</a> (197; 17% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/NUM</a> (148; 13% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/PRON</a> (56; 5% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/DET</a> (45; 4% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/PRON</a> (21; 2% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/SCONJ</a> (13; 1% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/NUM</a> (8; 1% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/PRON</a> (8; 1% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/CONJ</a> (7; 1% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/DET</a> (5; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/CONJ</a> (5; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/PUNCT</a> (3; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/NOUN</a> (2; 0% instances), <a href="">pt-pos/DET</a>-<a href="">pt-pos/ADV</a> (2; 0% instances), <a href="">pt-pos/PRON</a>-<a href="">pt-pos/ADV</a> (2; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/DET</a> (1; 0% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/SCONJ</a> (1; 0% instances), <a href="">pt-pos/ADP</a>-<a href="">pt-pos/SCONJ</a> (1; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/ADP</a> (1; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/ADV</a> (1; 0% instances), <a href="">pt-pos/ADV</a>-<a href="">pt-pos/PRON</a> (1; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/ADJ</a> (1; 0% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/ADV</a> (1; 0% instances), <a href="">pt-pos/NUM</a>-<a href="">pt-pos/NOUN</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 7 compound	color:blue
+1	Paulo	Paulo	PROPN	prop|M|S	_	9	nsubj	_	MWE=Paulo_Pereira|MWEPOS=PROPN
+2	Pereira	Pereira	PROPN	PROPN	_	1	name	_	_
+3	,	,	PUNCT	punc	_	1	punct	_	_
+4	vice-presidente	vice-presidente	NOUN	n|M|S	_	1	nmod	_	MWE=vice-presidente_do_Ippar|MWEPOS=NOUN
+5	de	de	ADP	prp|&lt;sam-&gt;	AdpType=Prep	7	case	_	_
+6	o	o	DET	art|&lt;-sam&gt;|&lt;artd&gt;|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	Ippar	Ippar	NOUN	NOUN	_	4	compound	_	_
+8	,	,	PUNCT	punc	_	1	punct	_	_
+9	acrescenta	acrescentar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+10	:	:	PUNCT	punc	_	9	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 4 compound	color:blue
+1	Folha	Folha	PROPN	prop|F|S	Gender=Fem|Number=Sing	0	root	_	_
+2	--	--	PUNCT	punc	_	1	punct	_	_
+3	o	o	DET	pron-indp|&lt;interr&gt;|M|S	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	dobj	_	MWE=o_que|MWEPOS=PRON
+4	que	que	SCONJ	SCONJ	_	3	compound	_	_
+5	a	o	DET	art|&lt;artd&gt;|F|S	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
+6	mulher	mulher	NOUN	n|F|S	Gender=Fem|Number=Sing	7	nsubj	_	_
+7	precisa	precisar	VERB	v-fin|PR|3S|IND	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
+8	hoje	hoje	ADV	adv	_	7	advmod	_	_
+9	,	,	PUNCT	punc	_	7	punct	_	_
+10	em	em	ADP	prp	AdpType=Prep	13	case	_	MWE=em_termos_de|MWEPOS=ADP
+11	termos	termos	NOUN	NOUN	_	10	mwe	_	_
+12	de	de	ADP	ADP	AdpType=Prep	10	mwe	_	_
+13	roupas	roupa	NOUN	n|F|P	Gender=Fem|Number=Plur	7	nmod	_	_
+14	?	?	PUNCT	punc	_	1	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 3 7 compound	color:blue
+1	Lisboa	Lisboa	PROPN	prop|F|S	Gender=Fem|Number=Sing	0	root	_	_
+2	,	,	PUNCT	punc	_	1	punct	_	_
+3	18	18	NUM	num|&lt;card&gt;|M|S/P	Gender=Masc|NumType=Card	1	nummod	_	_
+4	de	de	ADP	prp	AdpType=Prep	5	case	_	_
+5	Fevereiro	fevereiro	NOUN	n|&lt;prop&gt;|M|S	Gender=Masc|Number=Sing	3	nmod	_	_
+6	de	de	ADP	prp	AdpType=Prep	7	case	_	_
+7	1992	1992	NUM	num|&lt;card&gt;|M|S	Gender=Masc|Number=Sing|NumType=Card	3	compound	_	_
+8	.	.	PUNCT	punc	_	1	punct	_	_
+
+</code></pre>
+
+<hr />
+
+<h2 id="treebank-statistics-udportuguese-bosque">Treebank Statistics (UD_Portuguese-Bosque)</h2>
+
+<p>This relation is universal.</p>
+
+<p>161 nodes (0%) are attached to their parents as <code>compound</code>.</p>
+
+<p>157 instances of <code>compound</code> (98%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.97515527950311.</p>
+
+<p>The following 7 pairs of parts of speech are connected with <code>compound</code>: <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/NOUN</a> (149; 93% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/NOUN</a> (7; 4% instances), <a href="">pt-pos/ADJ</a>-<a href="">pt-pos/ADJ</a> (1; 1% instances), <a href="">pt-pos/NOUN</a>-<a href="">pt-pos/DET</a> (1; 1% instances), <a href="">pt-pos/PROPN</a>-<a href="">pt-pos/PROPN</a> (1; 1% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/NOUN</a> (1; 1% instances), <a href="">pt-pos/VERB</a>-<a href="">pt-pos/PROPN</a> (1; 1% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 4 compound	color:blue
+1	Parece	parecer	VERB	&lt;mv&gt;|V|PR|3S|IND|@FS-EXC	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	remador	remador	NOUN	&lt;np-idf&gt;|N|M|S|@&lt;SC	Gender=Masc|Number=Sing	1	xcomp	_	_
+3	de	de	ADP	PRP|@N&lt;	_	5	case	_	_
+4	porta	porta	NOUN	N|@&gt;N	_	5	compound	_	MWE:porta=avião
+5	avião	avião	NOUN	N|@P&lt;	_	2	nmod	_	_
+6	!	!	PUNCT	PU|@PU	_	1	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 3 compound	color:blue
+1	As	o	DET	&lt;artd&gt;|ART|F|P|@&gt;N	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	4	det	_	_
+2	duas	dois	NUM	&lt;card&gt;|NUM|F|P|@&gt;N	_	4	nummod	_	_
+3	primeiras	primeiro	NOUN	N|F|P|@&gt;N	Gender=Fem|Number=Plur	4	compound	_	_
+4	jovens	jovem	ADJ	&lt;n&gt;|&lt;np-def&gt;|ADJ|F|P|@SUBJ&gt;	Gender=Fem|Number=Plur	5	nsubj	_	_
+5	fraquejam	fraquejar	VERB	&lt;first-cjt&gt;|&lt;mv&gt;|V|PR|3P|IND|@FS-STA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	e	e	CONJ	&lt;co-fcl&gt;|&lt;co-fmc&gt;|&lt;co-vfin&gt;|KC|@CO	_	5	cc	_	_
+7	Miguel	Miguel	PROPN	PROP|M|S|@SUBJ&gt;	Gender=Masc|Number=Sing	10	nsubj	_	_
+8	vai	ir	AUX	&lt;cjt&gt;|&lt;aux&gt;|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux	_	_
+9	logo	logo	ADV	&lt;kc&gt;|ADV|@ADVL&gt;	_	10	advmod	_	_
+10	buscar	buscar	VERB	&lt;mv&gt;|V|INF|@ICL-AUX&lt;	VerbForm=Inf	5	conj	_	_
+11	outra	outro	PRON	&lt;diff&gt;|DET|F|S|@&lt;ACC	Gender=Fem|Number=Sing	10	dobj	_	_
+12	.	.	PUNCT	PU|@PU	_	5	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 25	bgColor:blue
+# visual-style 25	fgColor:white
+# visual-style 24	bgColor:blue
+# visual-style 24	fgColor:white
+# visual-style 24 25 compound	color:blue
+1	A	o	DET	&lt;artd&gt;|ART|F|S|@&gt;N	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
+2	diferença	diferença	NOUN	&lt;np-def&gt;|N|F|S|@SUBJ&gt;	Gender=Fem|Number=Sing	7	nsubj	_	_
+3	mínima	pequeno	ADJ	ADJ|F|S|@N&lt;	Gender=Fem|Number=Sing	2	amod	_	_
+4	entre	entre	ADP	PRP|@N&lt;	_	6	case	_	_
+5	os	o	DET	&lt;artd&gt;|ART|M|P|@&gt;N	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
+6	primeiros	primeiro	ADJ	&lt;NUM-ord&gt;|&lt;n&gt;|&lt;np-def&gt;|ADJ|M|P|@P&lt;	Gender=Masc|Number=Plur	2	nmod	_	_
+7	reflecte	reflectir	VERB	&lt;mv&gt;|V|PR|3S|IND|@FS-STA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	um	umo	DET	&lt;arti&gt;|DET|F|S|@&gt;N	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	MWE:um=vez
+9	vez	vez	NOUN	N|F|S|@&lt;ADVL	Gender=Fem|Number=Sing	7	nmod	_	_
+10	mais	muito	DET	&lt;quant&gt;|DET|F|S|@A&lt;	Gender=Fem|Number=Sing	9	advmod	_	_
+11	o	o	DET	&lt;artd&gt;|ART|M|S|@&gt;N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
+12	equilíbrio	equilíbrio	NOUN	&lt;np-def&gt;|N|M|S|@&lt;ACC	Gender=Masc|Number=Sing	7	dobj	_	_
+13	de	de	ADP	&lt;sam-&gt;|PRP|@N&lt;	_	15	case	_	_
+14	a	o	DET	&lt;-sam&gt;|&lt;artd&gt;|ART|@&gt;N	Definite=Def|PronType=Art	15	det	_	_
+15	prova	prova	NOUN	&lt;np-def&gt;|N|F|S|@P&lt;	Gender=Fem|Number=Sing	12	nmod	_	_
+16	,	,	PUNCT	PU|@PU	_	7	punct	_	_
+17	tanto	tanto	ADV	ADV|@&gt;A	_	18	mwe	_	MWE:tanto=mais=que
+18	mais	mais	ADV	ADV|@&gt;S	_	19	mwe	_	_
+19	que	que	SCONJ	KS|@SUB	_	31	mark	_	_
+20	o	o	DET	&lt;artd&gt;|ART|M|S|@&gt;N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
+21	primeiro	primeiro	ADJ	&lt;first-cjt&gt;|&lt;NUM-ord&gt;|&lt;n&gt;|&lt;np-def&gt;|ADJ|M|S|@SUBJ&gt;	Gender=Masc|Number=Sing	31	nsubj	_	_
+22	e	e	CONJ	&lt;co-subj&gt;|KC|@CO	_	21	cc	_	_
+23	o	o	DET	&lt;artd&gt;|ART|M|S|@&gt;N	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
+24	décimo	décimo	ADJ	&lt;cjt&gt;|&lt;NUM-ord&gt;|&lt;n&gt;|&lt;np-def&gt;|ADJ|M|S|@SUBJ&gt;	Gender=Masc|Number=Sing	21	conj	_	MWE:décimo=quarto
+25	quarto	quarto	ADJ	&lt;NUM-ord&gt;|ADJ|@A&lt;	_	24	compound	_	_
+26	de	de	ADP	&lt;sam-&gt;|PRP|@N&lt;ARG	_	28	case	_	_
+27	a	o	DET	&lt;-sam&gt;|&lt;artd&gt;|ART|@&gt;N	Definite=Def|PronType=Art	28	det	_	_
+28	classificação	classificação	NOUN	&lt;np-def&gt;|N|F|S|@P&lt;	Gender=Fem|Number=Sing	24	nmod	_	_
+29	geral	geral	ADJ	ADJ|F|S|@N&lt;	Gender=Fem|Number=Sing	28	amod	_	_
+30	estão	estar	VERB	&lt;mv&gt;|V|PR|3P|IND|@FS-&lt;ADVL	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	31	cop	_	_
+31	separados	separar	VERB	&lt;mv&gt;|V|PCP|M|P|@ICL-&lt;SC	Gender=Masc|Number=Plur|VerbForm=Part	7	dep	_	_
+32	somente	somente	ADV	ADV|@&gt;A	_	35	advmod	_	_
+33	por	por	ADP	PRP|@PASS	_	35	case	_	_
+34	quatro	quatro	NUM	&lt;card&gt;|NUM|M|P|@&gt;N	_	35	nummod	_	_
+35	pontos	ponto	NOUN	&lt;np-def&gt;|N|M|P|@P&lt;	Gender=Masc|Number=Plur	31	nmod	_	_
+36	.	.	PUNCT	PU|@PU	_	7	punct	_	_
+
+</code></pre>
+
+
+
+
+<!-- "in other languages" links -->
+<hr/>
+
+compound in other languages:
+
+[<a href="../../bg/dep/compound.html">bg</a>]
+
+[<a href="../../cs/dep/compound.html">cs</a>]
+
+[<a href="../../de/dep/compound.html">de</a>]
+
+[<a href="../../el/dep/compound.html">el</a>]
+
+[<a href="../../en/dep/compound.html">en</a>]
+
+[<a href="../../es/dep/compound.html">es</a>]
+
+[<a href="../../eu/dep/compound.html">eu</a>]
+
+[<a href="../../fa/dep/compound.html">fa</a>]
+
+[<a href="../../fi/dep/compound.html">fi</a>]
+
+[<a href="../../fr/dep/compound.html">fr</a>]
+
+[<a href="../../ga/dep/compound.html">ga</a>]
+
+[<a href="../../he/dep/compound.html">he</a>]
+
+[<a href="../../hu/dep/compound.html">hu</a>]
+
+[<a href="../../it/dep/compound.html">it</a>]
+
+[<a href="../../ja/dep/compound.html">ja</a>]
+
+[<a href="../../ko/dep/compound.html">ko</a>]
+
+[<a href="../../sv/dep/compound.html">sv</a>]
+
+[<a href="../../u/dep/compound.html">u</a>]
+
+
+
+
+      </div>
+
+<!-- support for embedded visualizations -->
+<script type="text/javascript">
+    var root = '../../'; // filled in by jekyll
+    head.js(
+        // External libraries
+        root + 'lib/ext/jquery.min.js',
+        root + 'lib/ext/jquery.svg.min.js',
+        root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
+        root + 'lib/ext/jquery-ui.min.js',
+        root + 'lib/ext/waypoints.min.js',
+        root + 'lib/ext/jquery.address.min.js',
+
+        // brat helper modules
+        root + 'lib/brat/configuration.js',
+        root + 'lib/brat/util.js',
+        root + 'lib/brat/annotation_log.js',
+        root + 'lib/ext/webfont.js',
+        // brat modules
+        root + 'lib/brat/dispatcher.js',
+        root + 'lib/brat/url_monitor.js',
+        root + 'lib/brat/visualizer.js',
+
+        // embedding configuration
+        root + 'lib/local/config.js',
+        // project-specific collection data
+        root + 'lib/local/collections.js',
+
+        // NOTE: non-local libraries
+        'https://spyysalo.github.io/annodoc/lib/local/annodoc.js',
+        'https://spyysalo.github.io/conllu.js/conllu.js'
+    );
+
+    var webFontURLs = [
+//        root + 'static/fonts/Astloch-Bold.ttf',
+        root + 'static/fonts/PT_Sans-Caption-Web-Regular.ttf',
+        root + 'static/fonts/Liberation_Sans-Regular.ttf'
+    ];
+
+    var setupAccordions = function() {
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
+	$(".jquery-ui-accordion").accordion({
+	    collapsible: true,
+	    active: false,
+	    change: accordionChange
+	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
+    };
+
+    var setupTabs = function() {
+        // standard jQuery UI "tabs" element initialization
+        $(".jquery-ui-tabs").tabs({ heightStyle: "auto" });
+
+        // use jQuery address to preserve tab state
+        // (see https://github.com/UniversalDependencies/docs/issues/65,
+        // http://stackoverflow.com/a/3330919)
+        if ($(".jquery-ui-tabs").length > 0) {
+            $.address.change(function(event){
+	        $(".jquery-ui-tabs").tabs("select", window.location.hash)
+	    });
+	    $(".jquery-ui-tabs").bind("tabsselect", function(event, ui) { 
+	        window.location.hash = ui.tab.hash;
+	    });
+        }
+    };
+
+    head.ready(function() {
+        // set up UI tabs on page
+        setupTabs();
+        setupAccordions();
+        setupTimeago();
+
+        // mark current collection (filled in by Jekyll)
+        Collections.listing['_current'] = 'pt-dep';
+
+	// perform all embedding and support functions
+	Annodoc.activate(Config.bratCollData, Collections.listing);
+    });
+</script>
+
+
+<!-- google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55233688-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+      <div id="footer">
+	  <p class="footer-text">&copy; 2014 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
+      </div>
+    </div>
+  </body>
+</html>

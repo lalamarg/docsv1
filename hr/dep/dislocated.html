@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-GB" xml:lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>dislocated</title>
+    <link rel="root" href=""/> <!-- for JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/jquery-ui-redmond.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
+    <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+<!--     <link rel="shortcut icon" href="favicon.ico"/> -->
+
+
+  </head>
+  <body>
+    <div id="main" class="center">
+
+      <div id="hp-header">
+	
+          <span class="header-text"><a href="http://universaldependencies.org/#language-hr">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/hr/dep">hr/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_hr-dep/dislocated.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+      </div>
+
+      <hr/>
+
+      <div id="content">
+	<noscript>
+	  <div id="noscript">
+	    It appears that you have Javascript disabled.
+	    Please consider enabling Javascript for this page to see the visualizations.
+	  </div>
+	</noscript>
+
+          <h2><code>dislocated</code>: dislocated elements</h2>
+
+<p>This document is a placeholder for the language-specific documentation
+for <code>dislocated</code>.</p>
+
+
+<!-- "automatic stats" -->
+
+
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udcroatian">Treebank Statistics (UD_Croatian)</h2>
+
+<p>This relation is universal.</p>
+
+<p>7 nodes (0%) are attached to their parents as <code>dislocated</code>.</p>
+
+<p>7 instances of <code>dislocated</code> (100%) are right-to-left (child precedes parent).
+Average distance between parent and child is 6.85714285714286.</p>
+
+<p>The following 5 pairs of parts of speech are connected with <code>dislocated</code>: <a href="">hr-pos/VERB</a>-<a href="">hr-pos/PRON</a> (3; 43% instances), <a href="">hr-pos/NUM</a>-<a href="">hr-pos/CONJ</a> (1; 14% instances), <a href="">hr-pos/PROPN</a>-<a href="">hr-pos/PRON</a> (1; 14% instances), <a href="">hr-pos/SCONJ</a>-<a href="">hr-pos/ADV</a> (1; 14% instances), <a href="">hr-pos/VERB</a>-<a href="">hr-pos/CONJ</a> (1; 14% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 6 2 dislocated	color:blue
+1	Osim	osim	ADP	_	Case=Gen	2	case	_	_
+2	toga	taj	PRON	_	Case=Gen|Gender=Neut|Number=Sing|PronType=Dem	6	dislocated	_	_
+3	,	,	PUNCT	_	_	2	punct	_	_
+4	Rehn	Rehn	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	6	nsubj	_	_
+5	je	biti	AUX	_	Number=Sing|Person=3|Tense=Pres	6	aux	_	_
+6	izjavio	izjaviti	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
+7	da	da	SCONJ	_	_	22	mark	_	_
+8	,	,	PUNCT	_	_	20	punct	_	_
+9	budući	budući	ADV	_	Degree=Pos	20	mark	_	_
+10	da	da	SCONJ	_	_	9	mwe	_	_
+11	je	biti	AUX	_	Number=Sing|Person=3|Tense=Pres	20	auxpass	_	_
+12	spor	spor	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	20	nsubjpass	_	_
+13	između	između	ADP	_	Case=Gen	14	case	_	_
+14	Hrvatske	Hrvatska	PROPN	_	Case=Gen|Gender=Fem|Number=Sing	12	nmod	_	_
+15	i	i	CONJ	_	_	14	cc	_	_
+16	Slovenije	Slovenija	PROPN	_	Case=Gen|Gender=Fem|Number=Sing	14	conj	_	_
+17	oko	oko	ADP	_	Case=Gen	19	case	_	_
+18	graničnog	graničan	ADJ	_	Case=Gen|Degree=Pos|Gender=Masc|Number=Sing	19	amod	_	_
+19	prometa	promet	NOUN	_	Case=Gen|Gender=Masc|Number=Sing	12	nmod	_	_
+20	riješen	riješiti	ADJ	_	Case=Nom|Degree=Pos|Gender=Masc|Number=Sing|VerbForm=Part	22	advcl	_	_
+21	,	,	PUNCT	_	_	20	punct	_	_
+22	nema	nemati	VERB	_	Number=Sing|Person=3|Tense=Pres	6	ccomp	_	_
+23	razloga	razlog	NOUN	_	Case=Gen|Gender=Masc|Number=Sing	22	dobj	_	_
+24	za	za	ADP	_	Case=Acc	25	case	_	_
+25	odlaganje	odlaganje	NOUN	_	Case=Acc|Gender=Neut|Number=Sing	23	nmod	_	_
+26	razgovora	razgovor	NOUN	_	Case=Gen|Gender=Masc|Number=Sing	25	nmod	_	_
+27	o	o	ADP	_	Case=Loc	28	case	_	_
+28	ribarstvu	ribarstvo	NOUN	_	Case=Loc|Gender=Neut|Number=Sing	26	nmod	_	_
+29	i	i	CONJ	_	_	28	cc	_	_
+30	vanjskoj	vanjski	ADJ	_	Case=Loc|Degree=Pos|Gender=Fem|Number=Sing	31	amod	_	_
+31	politici	politika	NOUN	_	Case=Loc|Gender=Fem|Number=Sing	28	conj	_	_
+32	.	.	PUNCT	_	_	6	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 21	bgColor:blue
+# visual-style 21	fgColor:white
+# visual-style 22	bgColor:blue
+# visual-style 22	fgColor:white
+# visual-style 22 21 dislocated	color:blue
+1	Popust	Popust	PROPN	_	Case=Nom|Gender=Masc|Number=Sing	18	parataxis	_	_
+2	tijekom	tijekom	ADP	_	Case=Gen	3	case	_	_
+3	trajanja	trajanje	NOUN	_	Case=Gen|Gender=Neut|Number=Sing	1	nmod	_	_
+4	manifestacije	manifestacija	NOUN	_	Case=Gen|Gender=Fem|Number=Sing	3	nmod	_	_
+5	Do	do	ADP	_	Case=Gen	6	case	_	_
+6	kraja	kraj	NOUN	_	Case=Gen|Gender=Masc|Number=Sing	4	nmod	_	_
+7	Dana	dan	NOUN	_	Case=Gen|Gender=Masc|Number=Plur	6	nmod	_	_
+8	trgovine	trgovina	NOUN	_	Case=Gen|Gender=Fem|Number=Sing	4	nmod	_	_
+9	BiH	BiH	PROPN	_	Case=Gen|Gender=Fem|Number=Sing	8	nmod	_	_
+10	,	,	PUNCT	_	_	13	punct	_	_
+11	koji	koji	PRON	_	Case=Nom|Gender=Masc|Number=Sing|PronType=Ind	13	mark	_	_
+12	će	htjeti	AUX	_	Number=Sing|Person=3|Tense=Pres	13	aux	_	_
+13	trajati	trajati	VERB	_	VerbForm=Inf	1	acl	_	_
+14	do	do	ADP	_	Case=Gen	16	case	_	_
+15	30.	30.	NUM	_	NumType=Ord	16	nummod	_	_
+16	lipnja	lipanj	NOUN	_	Case=Gen|Gender=Masc|Number=Sing	13	nmod	_	_
+17	,	,	PUNCT	_	_	13	punct	_	_
+18	predviđeno	predvidjeti	ADJ	_	Case=Nom|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing|VerbForm=Part	0	root	_	_
+19	je	biti	AUX	_	Number=Sing|Person=3|Tense=Pres	18	auxpass	_	_
+20	održavanje	održavanje	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	18	nsubjpass	_	_
+21	i	i	CONJ	_	_	22	dislocated	_	_
+22	drugih	drugi	NUM	_	Case=Gen|Gender=Masc|Number=Plur|NumType=Ord	23	nummod	_	_
+23	sadržaja	sadržaj	NOUN	_	Case=Gen|Gender=Masc|Number=Plur	20	nmod	_	_
+24	,	,	PUNCT	_	_	29	punct	_	_
+25	kojima	koji	PRON	_	Case=Ins|Gender=Masc|Number=Plur|PronType=Ind	29	mark	_	_
+26	je	biti	AUX	_	Number=Sing|Person=3|Tense=Pres	29	auxpass	_	_
+27	manifestacija	manifestacija	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	29	nsubjpass	_	_
+28	dodatno	dodatno	ADV	_	Degree=Pos	29	advmod	_	_
+29	obogaćena	obogatiti	ADJ	_	Case=Nom|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing|VerbForm=Part	23	acl	_	_
+30	.	.	PUNCT	_	_	18	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 20	bgColor:blue
+# visual-style 20	fgColor:white
+# visual-style 21	bgColor:blue
+# visual-style 21	fgColor:white
+# visual-style 21 20 dislocated	color:blue
+1	Izrazivši	izraziti	ADV	_	VerbForm=Part	14	xcomp	_	_
+2	nadu	nada	NOUN	_	Case=Acc|Gender=Fem|Number=Sing	1	dobj	_	_
+3	da	da	SCONJ	_	_	7	mark	_	_
+4	će	htjeti	AUX	_	Number=Sing|Person=3|Tense=Pres	7	aux	_	_
+5	u	u	ADP	_	Case=Loc	6	case	_	_
+6	budućnosti	budućnost	NOUN	_	Case=Loc|Gender=Fem|Number=Sing	7	nmod	_	_
+7	doći	doći	VERB	_	VerbForm=Inf	2	acl	_	_
+8	do	do	ADP	_	Case=Gen	10	case	_	_
+9	punog	pun	ADJ	_	Case=Gen|Definite=Def|Degree=Pos|Gender=Neut|Number=Sing	10	amod	_	_
+10	jedinstva	jedinstvo	NOUN	_	Case=Gen|Gender=Neut|Number=Sing	7	nmod	_	_
+11	,	,	PUNCT	_	_	1	punct	_	_
+12	Patrijarh	patrijarh	NOUN	_	Case=Nom|Gender=Masc|Number=Sing	14	nsubj	_	_
+13	je	biti	AUX	_	Number=Sing|Person=3|Tense=Pres	14	aux	_	_
+14	naglasio	naglasiti	VERB	_	Gender=Masc|Number=Sing|VerbForm=Part	0	root	_	_
+15	kako	kako	SCONJ	_	_	25	mark	_	_
+16	se	sebe	PRON	_	Case=Acc|Number=Sing|Reflex=Yes	25	dobj	_	_
+17	ta	taj	PRON	_	Case=Nom|Gender=Fem|Number=Sing|PronType=Dem	18	det	_	_
+18	nada	nada	NOUN	_	Case=Nom|Gender=Fem|Number=Sing	25	nsubj	_	_
+19	,	,	PUNCT	_	_	23	punct	_	_
+20	baš	baš	ADV	_	Degree=Pos	21	dislocated	_	_
+21	kao	kao	SCONJ	_	_	23	case	_	_
+22	i	i	CONJ	_	_	21	mwe	_	_
+23	jedinstvo	jedinstvo	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	25	nmod	_	_
+24	kršćana	kršćanin	NOUN	_	Case=Gen|Gender=Masc|Number=Plur	23	nmod	_	_
+25	oslanja	oslanjati	VERB	_	Number=Sing|Person=3|Tense=Pres	14	ccomp	_	_
+26	na	na	ADP	_	Case=Acc	28	case	_	_
+27	Božju	božji	ADJ	_	Case=Acc|Definite=Def|Degree=Pos|Gender=Fem|Number=Sing|Poss=Yes	28	amod	_	_
+28	snagu	snaga	NOUN	_	Case=Acc|Gender=Fem|Number=Sing	25	nmod	_	_
+29	.	.	PUNCT	_	_	14	punct	_	_
+
+</code></pre>
+
+
+
+
+<!-- "in other languages" links -->
+<hr/>
+
+dislocated in other languages:
+
+[<a href="../../bg/dep/dislocated.html">bg</a>]
+
+[<a href="../../cs/dep/dislocated.html">cs</a>]
+
+[<a href="../../de/dep/dislocated.html">de</a>]
+
+[<a href="../../el/dep/dislocated.html">el</a>]
+
+[<a href="../../en/dep/dislocated.html">en</a>]
+
+[<a href="../../es/dep/dislocated.html">es</a>]
+
+[<a href="../../eu/dep/dislocated.html">eu</a>]
+
+[<a href="../../fa/dep/dislocated.html">fa</a>]
+
+[<a href="../../fi/dep/dislocated.html">fi</a>]
+
+[<a href="../../fr/dep/dislocated.html">fr</a>]
+
+[<a href="../../ga/dep/dislocated.html">ga</a>]
+
+[<a href="../../he/dep/dislocated.html">he</a>]
+
+[<a href="../../hu/dep/dislocated.html">hu</a>]
+
+[<a href="../../it/dep/dislocated.html">it</a>]
+
+[<a href="../../ja/dep/dislocated.html">ja</a>]
+
+[<a href="../../ko/dep/dislocated.html">ko</a>]
+
+[<a href="../../sv/dep/dislocated.html">sv</a>]
+
+[<a href="../../u/dep/dislocated.html">u</a>]
+
+
+
+
+      </div>
+
+<!-- support for embedded visualizations -->
+<script type="text/javascript">
+    var root = '../../'; // filled in by jekyll
+    head.js(
+        // External libraries
+        root + 'lib/ext/jquery.min.js',
+        root + 'lib/ext/jquery.svg.min.js',
+        root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
+        root + 'lib/ext/jquery-ui.min.js',
+        root + 'lib/ext/waypoints.min.js',
+        root + 'lib/ext/jquery.address.min.js',
+
+        // brat helper modules
+        root + 'lib/brat/configuration.js',
+        root + 'lib/brat/util.js',
+        root + 'lib/brat/annotation_log.js',
+        root + 'lib/ext/webfont.js',
+        // brat modules
+        root + 'lib/brat/dispatcher.js',
+        root + 'lib/brat/url_monitor.js',
+        root + 'lib/brat/visualizer.js',
+
+        // embedding configuration
+        root + 'lib/local/config.js',
+        // project-specific collection data
+        root + 'lib/local/collections.js',
+
+        // NOTE: non-local libraries
+        'https://spyysalo.github.io/annodoc/lib/local/annodoc.js',
+        'https://spyysalo.github.io/conllu.js/conllu.js'
+    );
+
+    var webFontURLs = [
+//        root + 'static/fonts/Astloch-Bold.ttf',
+        root + 'static/fonts/PT_Sans-Caption-Web-Regular.ttf',
+        root + 'static/fonts/Liberation_Sans-Regular.ttf'
+    ];
+
+    var setupAccordions = function() {
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
+	$(".jquery-ui-accordion").accordion({
+	    collapsible: true,
+	    active: false,
+	    change: accordionChange
+	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
+    };
+
+    var setupTabs = function() {
+        // standard jQuery UI "tabs" element initialization
+        $(".jquery-ui-tabs").tabs({ heightStyle: "auto" });
+
+        // use jQuery address to preserve tab state
+        // (see https://github.com/UniversalDependencies/docs/issues/65,
+        // http://stackoverflow.com/a/3330919)
+        if ($(".jquery-ui-tabs").length > 0) {
+            $.address.change(function(event){
+	        $(".jquery-ui-tabs").tabs("select", window.location.hash)
+	    });
+	    $(".jquery-ui-tabs").bind("tabsselect", function(event, ui) { 
+	        window.location.hash = ui.tab.hash;
+	    });
+        }
+    };
+
+    head.ready(function() {
+        // set up UI tabs on page
+        setupTabs();
+        setupAccordions();
+        setupTimeago();
+
+        // mark current collection (filled in by Jekyll)
+        Collections.listing['_current'] = 'hr-dep';
+
+	// perform all embedding and support functions
+	Annodoc.activate(Config.bratCollData, Collections.listing);
+    });
+</script>
+
+
+<!-- google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55233688-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+      <div id="footer">
+	  <p class="footer-text">&copy; 2014 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
+      </div>
+    </div>
+  </body>
+</html>

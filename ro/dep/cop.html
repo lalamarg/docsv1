@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-GB" xml:lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>cop</title>
+    <link rel="root" href=""/> <!-- for JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/jquery-ui-redmond.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
+    <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+<!--     <link rel="shortcut icon" href="favicon.ico"/> -->
+
+
+  </head>
+  <body>
+    <div id="main" class="center">
+
+      <div id="hp-header">
+	
+          <span class="header-text"><a href="http://universaldependencies.org/#language-ro">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/ro/dep">ro/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_ro-dep/cop.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+      </div>
+
+      <hr/>
+
+      <div id="content">
+	<noscript>
+	  <div id="noscript">
+	    It appears that you have Javascript disabled.
+	    Please consider enabling Javascript for this page to see the visualizations.
+	  </div>
+	</noscript>
+
+          <h2><code>cop</code>: copula</h2>
+
+<p>A copula is the relation between the complement of a copular verb and the copular verb <code>a fi</code> (only). (We normally take a copula as a dependent of its complement.)</p>
+
+<pre><code class="language-sdparse">Maria este fericită . \n Maria is happy .
+cop(fericită, este)
+</code></pre>
+
+<p>All other copula verbs are heads of clauses and their complements are in <code>xcomp</code> relation to them:</p>
+
+<pre><code class="language-sdparse">Maria a devenit designer . \n Mary has become designer .
+xcomp(devenit, designer)
+</code></pre>
+
+<p>When the copula verb has auxiliaries, they are also dependents of the lexical predicate:</p>
+
+<pre><code class="language-sdparse">Maria va fi campioană . \n Mary will be champion .
+cop(campioană, fi)
+aux(campioană, va)
+</code></pre>
+
+<p>When the complement of the copula verb <code>a fi</code> is a clause, the copula is the head, and the subordinate clause is in <code>ccomp</code> relation with it:</p>
+
+<pre><code class="language-sdparse">ROOT Noi suntem cum ne știi . \n We are how us know-you .
+root(ROOT, suntem)
+ccomp(suntem, știi)
+</code></pre>
+
+
+<!-- "automatic stats" -->
+
+
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udromanian">Treebank Statistics (UD_Romanian)</h2>
+
+<p>This relation is universal.</p>
+
+<p>2110 nodes (1%) are attached to their parents as <code>cop</code>.</p>
+
+<p>1986 instances of <code>cop</code> (94%) are right-to-left (child precedes parent).
+Average distance between parent and child is 1.76445497630332.</p>
+
+<p>The following 19 pairs of parts of speech are connected with <code>cop</code>: <a href="">ro-pos/NOUN</a>-<a href="">ro-pos/VERB</a> (758; 36% instances), <a href="">ro-pos/ADJ</a>-<a href="">ro-pos/VERB</a> (610; 29% instances), <a href="">ro-pos/ADV</a>-<a href="">ro-pos/VERB</a> (266; 13% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/AUX</a> (222; 11% instances), <a href="">ro-pos/PRON</a>-<a href="">ro-pos/VERB</a> (83; 4% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/VERB</a> (57; 3% instances), <a href="">ro-pos/ADP</a>-<a href="">ro-pos/VERB</a> (30; 1% instances), <a href="">ro-pos/NUM</a>-<a href="">ro-pos/VERB</a> (30; 1% instances), <a href="">ro-pos/ADJ</a>-<a href="">ro-pos/AUX</a> (18; 1% instances), <a href="">ro-pos/PROPN</a>-<a href="">ro-pos/VERB</a> (13; 1% instances), <a href="">ro-pos/NOUN</a>-<a href="">ro-pos/AUX</a> (11; 1% instances), <a href="">ro-pos/DET</a>-<a href="">ro-pos/VERB</a> (3; 0% instances), <a href="">ro-pos/NOUN</a>-<a href="">ro-pos/PRON</a> (2; 0% instances), <a href="">ro-pos/PRON</a>-<a href="">ro-pos/AUX</a> (2; 0% instances), <a href="">ro-pos/ADV</a>-<a href="">ro-pos/AUX</a> (1; 0% instances), <a href="">ro-pos/ADV</a>-<a href="">ro-pos/PRON</a> (1; 0% instances), <a href="">ro-pos/PART</a>-<a href="">ro-pos/VERB</a> (1; 0% instances), <a href="">ro-pos/SYM</a>-<a href="">ro-pos/AUX</a> (1; 0% instances), <a href="">ro-pos/VERB</a>-<a href="">ro-pos/ADJ</a> (1; 0% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 2 cop	color:blue
+1	Una	unul	PRON	Pi3fsr	Case=Acc,Nom|Gender=Fem|Number=Sing|Person=3|PronType=Ind	4	nsubj	_	_
+2	era	fi	VERB	Vmii3s	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	cop	_	_
+3	o	un	DET	Tifsr	Case=Acc,Nom|Gender=Fem|Number=Sing|PronType=Ind	4	det	_	_
+4	fată	fată	NOUN	Ncfsrn	Case=Acc,Nom|Definite=Ind|Gender=Fem|Number=Sing	0	root	_	_
+5	cu	cu	ADP	Spsa	AdpType=Prep|Case=Acc	6	case	_	_
+6	care	care	PRON	Pw3--r	Case=Acc,Nom|Person=3|PronType=Int,Rel	8	nmod:pmod	_	_
+7	se	sine	PRON	Px3--a--------w	Case=Acc|Person=3|PronType=Prs|Reflex=Yes|Strength=Weak	8	expl:pv	_	_
+8	întâlnea	întâlni	VERB	Vmii3s	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	4	acl	_	_
+9	de	de	ADP	Spsa	AdpType=Prep|Case=Acc	11	case	_	_
+10	multe	mult	DET	Di3fp	Gender=Fem|Number=Plur|Person=3|PronType=Ind	11	det	_	_
+11	ori	oară	NOUN	Ncfp-n	Definite=Ind|Gender=Fem|Number=Plur	8	nmod	_	_
+12	pe	pe	ADP	Spsa	AdpType=Prep|Case=Acc	13	case	_	_
+13	coridoare	coridor	NOUN	Ncfp-n	Definite=Ind|Gender=Fem|Number=Plur	8	nmod	_	_
+14	.	.	PUNCT	PERIOD	_	4	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 3	bgColor:blue
+# visual-style 3	fgColor:white
+# visual-style 4	bgColor:blue
+# visual-style 4	fgColor:white
+# visual-style 4 3 cop	color:blue
+1	Parlamentul	parlament	NOUN	Ncmsry	Case=Acc,Nom|Definite=Def|Gender=Masc|Number=Sing	4	nsubj	_	_
+2	României	România	PROPN	Npfsoy	Case=Dat,Gen|Definite=Def|Gender=Fem|Number=Sing	1	nmod	_	_
+3	este	fi	VERB	Vmip3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
+4	bicameral	bicameral	ADJ	Afpms-n	Definite=Ind|Degree=Pos|Gender=Masc|Number=Sing	0	root	_	_
+5	,	,	PUNCT	COMMA	_	4	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 8	bgColor:blue
+# visual-style 8	fgColor:white
+# visual-style 8 5 cop	color:blue
+1	Un	un	DET	Timsr	Case=Acc,Nom|Gender=Masc|Number=Sing|PronType=Ind	4	det	_	_
+2	al	al	DET	Tsms	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	3	det	_	_
+3	doilea	doi	NUM	Moms-l	Gender=Masc|Number=Sing|NumForm=Word|NumType=Ord	4	nummod	_	_
+4	Maiorescu	maiorescu	NOUN	Ncms-n	Definite=Ind|Gender=Masc|Number=Sing	8	nsubj	_	_
+5	e	fi	VERB	Vmip3s	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
+6	dureros	dureros	ADV	Rgp	Degree=Pos	8	advmod	_	_
+7	de	de	ADP	Spsa	AdpType=Prep|Case=Acc	6	case	_	_
+8	necesar	necesar	ADV	Rgp	Degree=Pos	0	root	_	_
+9	.	.	PUNCT	PERIOD	_	8	punct	_	_
+
+</code></pre>
+
+
+
+
+<!-- "in other languages" links -->
+<hr/>
+
+cop in other languages:
+
+[<a href="../../bg/dep/cop.html">bg</a>]
+
+[<a href="../../cs/dep/cop.html">cs</a>]
+
+[<a href="../../de/dep/cop.html">de</a>]
+
+[<a href="../../el/dep/cop.html">el</a>]
+
+[<a href="../../en/dep/cop.html">en</a>]
+
+[<a href="../../es/dep/cop.html">es</a>]
+
+[<a href="../../eu/dep/cop.html">eu</a>]
+
+[<a href="../../fa/dep/cop.html">fa</a>]
+
+[<a href="../../fi/dep/cop.html">fi</a>]
+
+[<a href="../../fr/dep/cop.html">fr</a>]
+
+[<a href="../../ga/dep/cop.html">ga</a>]
+
+[<a href="../../he/dep/cop.html">he</a>]
+
+[<a href="../../hu/dep/cop.html">hu</a>]
+
+[<a href="../../it/dep/cop.html">it</a>]
+
+[<a href="../../ja/dep/cop.html">ja</a>]
+
+[<a href="../../ko/dep/cop.html">ko</a>]
+
+[<a href="../../sv/dep/cop.html">sv</a>]
+
+[<a href="../../u/dep/cop.html">u</a>]
+
+
+
+
+      </div>
+
+<!-- support for embedded visualizations -->
+<script type="text/javascript">
+    var root = '../../'; // filled in by jekyll
+    head.js(
+        // External libraries
+        root + 'lib/ext/jquery.min.js',
+        root + 'lib/ext/jquery.svg.min.js',
+        root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
+        root + 'lib/ext/jquery-ui.min.js',
+        root + 'lib/ext/waypoints.min.js',
+        root + 'lib/ext/jquery.address.min.js',
+
+        // brat helper modules
+        root + 'lib/brat/configuration.js',
+        root + 'lib/brat/util.js',
+        root + 'lib/brat/annotation_log.js',
+        root + 'lib/ext/webfont.js',
+        // brat modules
+        root + 'lib/brat/dispatcher.js',
+        root + 'lib/brat/url_monitor.js',
+        root + 'lib/brat/visualizer.js',
+
+        // embedding configuration
+        root + 'lib/local/config.js',
+        // project-specific collection data
+        root + 'lib/local/collections.js',
+
+        // NOTE: non-local libraries
+        'https://spyysalo.github.io/annodoc/lib/local/annodoc.js',
+        'https://spyysalo.github.io/conllu.js/conllu.js'
+    );
+
+    var webFontURLs = [
+//        root + 'static/fonts/Astloch-Bold.ttf',
+        root + 'static/fonts/PT_Sans-Caption-Web-Regular.ttf',
+        root + 'static/fonts/Liberation_Sans-Regular.ttf'
+    ];
+
+    var setupAccordions = function() {
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
+	$(".jquery-ui-accordion").accordion({
+	    collapsible: true,
+	    active: false,
+	    change: accordionChange
+	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
+    };
+
+    var setupTabs = function() {
+        // standard jQuery UI "tabs" element initialization
+        $(".jquery-ui-tabs").tabs({ heightStyle: "auto" });
+
+        // use jQuery address to preserve tab state
+        // (see https://github.com/UniversalDependencies/docs/issues/65,
+        // http://stackoverflow.com/a/3330919)
+        if ($(".jquery-ui-tabs").length > 0) {
+            $.address.change(function(event){
+	        $(".jquery-ui-tabs").tabs("select", window.location.hash)
+	    });
+	    $(".jquery-ui-tabs").bind("tabsselect", function(event, ui) { 
+	        window.location.hash = ui.tab.hash;
+	    });
+        }
+    };
+
+    head.ready(function() {
+        // set up UI tabs on page
+        setupTabs();
+        setupAccordions();
+        setupTimeago();
+
+        // mark current collection (filled in by Jekyll)
+        Collections.listing['_current'] = 'ro-dep';
+
+	// perform all embedding and support functions
+	Annodoc.activate(Config.bratCollData, Collections.listing);
+    });
+</script>
+
+
+<!-- google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55233688-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+      <div id="footer">
+	  <p class="footer-text">&copy; 2014 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
+      </div>
+    </div>
+  </body>
+</html>

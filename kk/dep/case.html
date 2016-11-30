@@ -1,0 +1,328 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-GB" xml:lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>case</title>
+    <link rel="root" href=""/> <!-- for JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/jquery-ui-redmond.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style-vis.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/hint.css"/>
+    <script type="text/javascript" src="../../lib/ext/head.load.min.js"></script>
+    <script type="text/javascript" src="../../lib/ext/jquery.timeago.js.js"></script>
+<!--     <link rel="shortcut icon" href="favicon.ico"/> -->
+
+
+  </head>
+  <body>
+    <div id="main" class="center">
+
+      <div id="hp-header">
+	
+          <span class="header-text"><a href="http://universaldependencies.org/#language-kk">home</a></span>
+          <span class="header-text"><a href="http://universaldependencies.org/kk/dep">kk/dep</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/edit/pages-source/_kk-dep/case.md" target="#">edit page</a></span>
+          <span class="header-text"><a href="https://github.com/universaldependencies/docs/issues">issue tracker</a></span>
+      </div>
+
+      <hr/>
+
+      <div id="content">
+	<noscript>
+	  <div id="noscript">
+	    It appears that you have Javascript disabled.
+	    Please consider enabling Javascript for this page to see the visualizations.
+	  </div>
+	</noscript>
+
+          <h2><code>case</code>: case marking</h2>
+
+<p>The dependency type <code>case</code> is used for the postposition in 
+postpositional phrases. The head of
+a postpositional phrase is the nominal, not the postposition, so as to
+analyse postpositional phrases similarly to nominal modifiers without a
+postposition. (Such nominal modifiers are frequent in Kazakh, as cases
+are often used for the same purpose as postpositions.) To the same end,
+the type <code>case</code> is used in combination with the type <code>nmod</code>, which is
+also used for nominal modifiers when no adposition is present (see
+<a href="">nmod</a>).</p>
+
+<!-- fname:adpos.pdf -->
+<pre><code class="language-sdparse">Азамат ағашқа қарай жүгірді . \n Azamat tree-to towards ran .
+nsubj(жүгірді-4, Азамат-1)
+case(ағашқа-2, қарай-3)
+punct(жүгірді-4, .-5)
+nmod(жүгірді-4, ағашқа-2)
+</code></pre>
+
+<p>Note that case is not used with auxiliary nouns (sometimes called “postpositions”) in 
+the form of N¹.gen N².poss.case, for those nmod should be used (following treatment 
+in English of prepositional constructions like “in front of”).</p>
+
+<pre><code class="language-sdparse">Айгүл бақшаның ішінде ақырын басып жүр . \n Aygül garden-of inside-in quietly walking is .
+nsubj(басып-5, Айгүл-1)
+nmod:poss(ішінде-3, бақшаның-2)
+nmod(басып-5, ішінде-3)
+advmod(басып-5, ақырын-4)
+aux(басып-5, жүр-6)
+punct(басып-5, .-7)
+</code></pre>
+
+<!-- TODO: @case with verbal nouns -->
+
+
+
+<!-- "automatic stats" -->
+
+
+
+
+
+
+
+<hr />
+
+<h2 id="treebank-statistics-udkazakh">Treebank Statistics (UD_Kazakh)</h2>
+
+<p>This relation is universal.</p>
+
+<p>91 nodes (1%) are attached to their parents as <code>case</code>.</p>
+
+<p>91 instances of <code>case</code> (100%) are left-to-right (parent precedes child).
+Average distance between parent and child is 1.05494505494505.</p>
+
+<p>The following 6 pairs of parts of speech are connected with <code>case</code>: <a href="">kk-pos/NOUN</a>-<a href="">kk-pos/ADP</a> (55; 60% instances), <a href="">kk-pos/PRON</a>-<a href="">kk-pos/ADP</a> (13; 14% instances), <a href="">kk-pos/VERB</a>-<a href="">kk-pos/ADP</a> (11; 12% instances), <a href="">kk-pos/NUM</a>-<a href="">kk-pos/ADP</a> (5; 5% instances), <a href="">kk-pos/PROPN</a>-<a href="">kk-pos/ADP</a> (4; 4% instances), <a href="">kk-pos/AUX</a>-<a href="">kk-pos/ADP</a> (3; 3% instances).</p>
+
+<pre><code class="language-conllu"># visual-style 6	bgColor:blue
+# visual-style 6	fgColor:white
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 6 case	color:blue
+1	Кафедра	кафедра	NOUN	n	_	8	nsubj	_	nom
+2	«	«	PUNCT	lquot	_	3	punct	_	_
+3	Менеджмент	менеджмент	NOUN	n	_	1	appos	_	nom
+4	»	»	PUNCT	rquot	_	3	punct	_	_
+5	мамандық	мамандық	NOUN	n	_	8	nmod	_	nom
+6	бойынша	бойынша	ADP	post	_	5	case	_	_
+7	бакалавр	бакалавр	NOUN	n	_	8	dobj	_	nom
+8	дайындайды	дайында	VERB	v	_	0	root	_	tv|aor|p3|sg
+9	.	.	PUNCT	sent	_	8	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 2	bgColor:blue
+# visual-style 2	fgColor:white
+# visual-style 1	bgColor:blue
+# visual-style 1	fgColor:white
+# visual-style 1 2 case	color:blue
+1	Одан	ол	PRON	prn	_	7	nmod	_	dem|abl
+2	кейін	кейін	ADP	post	_	1	case	_	_
+3	оған	ол	PRON	prn	_	7	nmod	_	dem|dat
+4	кішкентай	кішкентай	ADJ	adj	_	6	amod	_	_
+5	бір	бір	DET	det	_	6	det	_	ind
+6	қол	қол	NOUN	n	_	7	nsubj	_	nom
+7	көрінеді	көрін	VERB	v	_	0	root	_	iv|aor|p3|sg
+8	.	.	PUNCT	sent	_	7	punct	_	_
+
+</code></pre>
+
+<pre><code class="language-conllu"># visual-style 7	bgColor:blue
+# visual-style 7	fgColor:white
+# visual-style 5	bgColor:blue
+# visual-style 5	fgColor:white
+# visual-style 5 7 case	color:blue
+1	Шайларын	шай	NOUN	n	Case=Acc|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	2	dobj	_	шай|n|pl|px3sp|acc
+2	ішіп	іш	VERB	v	Aspect=Perf|VerbForm=Trans	5	conj	_	іш|v|tv|gnaperf
+3	,	,	PUNCT	cm	_	5	punct	_	,|cm
+4	шылымдарын	шылым	NOUN	n	Case=Acc|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	5	dobj	_	шылым|n|pl|px3sp|acc
+5	тартысып	тарт	VERB	v	Aspect=Perf|VerbForm=Trans|Voice=Coop	11	advcl	_	тарт|v|tv|coop|gnaperf
+6	болған	бол	VERB	v	Case=Nom|Tense=Past|VerbForm=Ger	5	aux	_	бол|v|iv|gerpast|nom
+7	соң	соң	ADP	post	_	5	case	_	соң|post
+8	,	,	PUNCT	cm	_	11	punct	_	,|cm
+9	өзгелері	өзге	ADJ	adj	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	11	nsubj	_	өзге|adj|subst|pl|px3sp|nom
+10	тысқа	тыс	NOUN	n	Case=Dat	11	nmod	_	тыс|n|dat
+11	шықты	шық	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	шық|v|tv|ifi|p3|sg
+12	.	.	PUNCT	sent	_	11	punct	_	.|sent
+
+</code></pre>
+
+
+
+
+<!-- "in other languages" links -->
+<hr/>
+
+case in other languages:
+
+[<a href="../../bg/dep/case.html">bg</a>]
+
+[<a href="../../cs/dep/case.html">cs</a>]
+
+[<a href="../../de/dep/case.html">de</a>]
+
+[<a href="../../el/dep/case.html">el</a>]
+
+[<a href="../../en/dep/case.html">en</a>]
+
+[<a href="../../es/dep/case.html">es</a>]
+
+[<a href="../../eu/dep/case.html">eu</a>]
+
+[<a href="../../fa/dep/case.html">fa</a>]
+
+[<a href="../../fi/dep/case.html">fi</a>]
+
+[<a href="../../fr/dep/case.html">fr</a>]
+
+[<a href="../../ga/dep/case.html">ga</a>]
+
+[<a href="../../he/dep/case.html">he</a>]
+
+[<a href="../../hu/dep/case.html">hu</a>]
+
+[<a href="../../it/dep/case.html">it</a>]
+
+[<a href="../../ja/dep/case.html">ja</a>]
+
+[<a href="../../ko/dep/case.html">ko</a>]
+
+[<a href="../../sv/dep/case.html">sv</a>]
+
+[<a href="../../u/dep/case.html">u</a>]
+
+
+
+
+      </div>
+
+<!-- support for embedded visualizations -->
+<script type="text/javascript">
+    var root = '../../'; // filled in by jekyll
+    head.js(
+        // External libraries
+        root + 'lib/ext/jquery.min.js',
+        root + 'lib/ext/jquery.svg.min.js',
+        root + 'lib/ext/jquery.svgdom.min.js',
+        root + 'lib/ext/jquery.timeago.js',
+        root + 'lib/ext/jquery-ui.min.js',
+        root + 'lib/ext/waypoints.min.js',
+        root + 'lib/ext/jquery.address.min.js',
+
+        // brat helper modules
+        root + 'lib/brat/configuration.js',
+        root + 'lib/brat/util.js',
+        root + 'lib/brat/annotation_log.js',
+        root + 'lib/ext/webfont.js',
+        // brat modules
+        root + 'lib/brat/dispatcher.js',
+        root + 'lib/brat/url_monitor.js',
+        root + 'lib/brat/visualizer.js',
+
+        // embedding configuration
+        root + 'lib/local/config.js',
+        // project-specific collection data
+        root + 'lib/local/collections.js',
+
+        // NOTE: non-local libraries
+        'https://spyysalo.github.io/annodoc/lib/local/annodoc.js',
+        'https://spyysalo.github.io/conllu.js/conllu.js'
+    );
+
+    var webFontURLs = [
+//        root + 'static/fonts/Astloch-Bold.ttf',
+        root + 'static/fonts/PT_Sans-Caption-Web-Regular.ttf',
+        root + 'static/fonts/Liberation_Sans-Regular.ttf'
+    ];
+
+    var setupAccordions = function() {
+	// preserve state in URL hash, following in part
+	// http://www.boduch.ca/2011/05/remembering-jquery-ui-accordion.html
+	var accordionChange = function(event, ui) {
+	    var context = ui.newHeader ? ui.newHeader.context : null;
+	    if (context) {
+		var languageCode = context.getAttribute('data-lc');
+		if (languageCode !== null) {
+		    window.location.hash = languageCode;
+		}
+	    }
+	}
+        // jQuery UI "accordion" element initialization
+	$(".jquery-ui-accordion").accordion({
+	    collapsible: true,
+	    active: false,
+	    change: accordionChange
+	});
+	if ($(".jquery-ui-accordion").length) {
+	    var matches = window.location.hash.match(/^\#(.*)$/);
+	    console.log(matches);
+	    if (matches !== null) {
+		var languageCode = matches[1];
+		var tab = $('[data-lc="'+languageCode+'"]');
+		// the following will only work after accordion is initialized
+		var index = $('.jquery-ui-accordion div.ui-accordion-header').index(tab);
+		if (index !== -1) {
+		    $(".jquery-ui-accordion").accordion({ active: index });
+		}
+	    }
+	}
+    };
+
+    var setupTimeago = function() {
+        jQuery("time.timeago").timeago();
+    };
+
+    var setupTabs = function() {
+        // standard jQuery UI "tabs" element initialization
+        $(".jquery-ui-tabs").tabs({ heightStyle: "auto" });
+
+        // use jQuery address to preserve tab state
+        // (see https://github.com/UniversalDependencies/docs/issues/65,
+        // http://stackoverflow.com/a/3330919)
+        if ($(".jquery-ui-tabs").length > 0) {
+            $.address.change(function(event){
+	        $(".jquery-ui-tabs").tabs("select", window.location.hash)
+	    });
+	    $(".jquery-ui-tabs").bind("tabsselect", function(event, ui) { 
+	        window.location.hash = ui.tab.hash;
+	    });
+        }
+    };
+
+    head.ready(function() {
+        // set up UI tabs on page
+        setupTabs();
+        setupAccordions();
+        setupTimeago();
+
+        // mark current collection (filled in by Jekyll)
+        Collections.listing['_current'] = 'kk-dep';
+
+	// perform all embedding and support functions
+	Annodoc.activate(Config.bratCollData, Collections.listing);
+    });
+</script>
+
+
+<!-- google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55233688-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+      <div id="footer">
+	  <p class="footer-text">&copy; 2014 
+	    <a href="http://universaldependencies.org/introduction.html#contributors" style="color:gray">Universal Dependencies contributors</a>. 
+	    Site powered by <a href="http://spyysalo.github.io/annodoc" style="color:gray">Annodoc</a> and <a href="http://brat.nlplab.org/" style="color:gray">brat</a></p>.
+      </div>
+    </div>
+  </body>
+</html>
