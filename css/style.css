@@ -6,6 +6,23 @@
 /* @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic,600italic,700italic&subset=latin&effect=smoothing); */
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic,600italic,700italic&subset=latin&effect=smoothing);
 
+#archived-notice {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: #ad0909;
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  font-weight: bold;
+}
+
+#archived-notice a {
+  color: white;  
+}
+
 /* override sentence number text style from brat style-vis.css */
 .sentnum text {
   display: none;
