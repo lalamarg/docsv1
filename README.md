@@ -1,4 +1,6 @@
-Universal Dependencies online documentation
-===========================================
+Universal Dependencies v1 documentation
+=======================================
 
-The Universal Dependencies manual is online [here](http://universaldependencies.org/).
+This is a frozed version of the universal dependencies version 1 documentation.
+
+The current version is found at https://github.com/UniversalDependencies/docs
