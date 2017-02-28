@@ -9,5 +9,5 @@ subject of a passive clause.
 
 ~~~ sdparse
 La course a été gagnée par le plus jeune participant . \n The race got won by the youngest participant .
-nsubjpass(gagnée, participant)
+nsubjpass(gagnée, course)
 ~~~
